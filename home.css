@@ -82,20 +82,20 @@ header {
     font-weight: normal; 
     
     font-style: normal;
-    font-size: 20em;
+    font-size: 25em;
     
     transform: rotate(-90deg);
 }
 
 .homeDesc {
-    width: 400px;
+    width: 50%;
     margin-left: -50px;
 }
 
 .homeDesc_Name {
     margin: 0;
     
-    font-size: 4em;
+    font-size: 9em;
     font-family: 'IBM Plex Mono',sans-serif;
     font-weight: bold;
     
