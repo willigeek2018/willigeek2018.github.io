@@ -59,6 +59,10 @@ header {
     color: #FFC400;
 }
 
+.mainNav_ListItem a:active {
+    color: #FFC400;
+}
+
 /* MAIN STYLES */
 
 .horizontal_wrapper {
@@ -70,42 +74,62 @@ header {
 }
 
 article {
-    min-width: 100vh;
+    min-width: 150vh;
     padding: 30px;
     margin: 0px 100px;
-    border-radius: 10px;
+    border-radius: 50px;
     
     border: 1px double white;
 }
 
 article h1 {
     font-family: 'IBM Plex Mono', sans-serif;
-    font-size: 2.5em;
+    font-size: 5em;
     margin: 0;
     line-height: 1em;
 }
 
 article p{
+    margin: 20px 0px;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-style: italic;
+    font-size: 3em;
 }
 .cta {
     display: inline-block;
     
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2em;
+  
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
     
-    padding: 15px;
+    padding: 15px 50px;
     border-radius: 5px;
     background-color: white;
+}
+
+.cta:hover {
+    display: inline-block;
+    
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2em;
+  
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: black;
 }
 
 /* ARTICLE INDIVIDUALS STYLE */
 
 .card {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .theTrumpet {
@@ -115,6 +139,21 @@ article p{
 .atm {
     background-color: #F48324;
 }
+
+.atmDesc {
+  flex-basis: 40%;
+}
+
+.atmImg {
+  width: 800px;
+  height: auto;
+}
+
+.atmImg img {
+  width: 100%;
+  height: 100%;
+}
+
 .maserati {
     background-color: grey;
 }
@@ -125,8 +164,15 @@ article p{
     background-color: steelblue;
 }
 
-.illustrations img {
-    border-radius: 10px;
+.illustrations_Img {
+  width: 500px;
+  height: auto;
+}
+
+.illustrations_Img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 /* SCROLL BAR */
@@ -143,13 +189,13 @@ article p{
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    border: 1px solid white; 
+    border: 2px solid white; 
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: yellow; 
+    border: 2px solid #FFC400; 
 }
 
 
