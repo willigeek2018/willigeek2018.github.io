@@ -129,24 +129,18 @@ article p{
 }
 
 
-/* FOOTER SECTION STYLES */
-
 footer {
     
-    position: relative;
-    bottom: -30px;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-    padding: 0px 25px;
+    position: fixed;
+    bottom: 25px;
 }
 
 /* Experiment button */
 
 .experiments {
-    position: relative;
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
 }
 
 .experiments img {
@@ -180,7 +174,9 @@ footer {
 /* Showreel button */
 
 .showreel {
-    position: relative;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
 }
 
 .showreelTips {
