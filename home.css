@@ -67,7 +67,7 @@ header {
 /* MAIN SECTION STYLES */
 
 .homeContents {
-    height: 69vh;
+    height: 100vh;
     
     display: flex;
     justify-content: flex-start;
@@ -82,7 +82,7 @@ header {
     font-weight: normal; 
     
     font-style: normal;
-    font-size: 15em;
+    font-size: 20em;
     
     transform: rotate(-90deg);
 }
