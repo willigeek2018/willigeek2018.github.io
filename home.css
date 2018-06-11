@@ -86,7 +86,7 @@ header {
 .homeGreeting {
     font-size: 8em;
     font-family: 'BebasNeueRegular',sans-serif;
-    letter-spacing: 35px;
+    letter-spacing: 20px;
     
     margin: 0;
     border: 2px solid green;
