@@ -59,8 +59,9 @@ header {
     text-transform: uppercase;
     color: white;
     
-    font-size: 1.2em;
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 1em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 1px;
     
     
     padding: 10px 20px;
@@ -102,7 +103,7 @@ header {
 
 .homeDesc_Name {
     font-size: 3em;
-    font-family: 'IBM Plex Mono',sans-serif;
+    font-family: 'Barlow Semi Condensed',sans-serif;
     font-style: normal;
     
     line-height: 1.2em;
@@ -113,12 +114,15 @@ header {
 }
 
 .homeDesc_Profession {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: #FFC400;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1px;
 }
 
 .me {
-    font-family: 'IBM Plex Mono', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-style: italic;
     font-size: 1.25em;
 }
@@ -157,7 +161,8 @@ footer {
     text-decoration: none;
     color: #FFC400;
     
-    font-family: 'IBM Plex Mono',sans-serif;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+    letter-spacing: 5px;
 }
 
 .experiments:hover .experimentsTips{
@@ -189,7 +194,8 @@ footer {
     text-decoration: none;
     color: #FFC400;
     
-    font-family: 'IBM Plex Mono',sans-serif;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+    letter-spacing: 5px;
 }
 
 .showreel:hover .showreelTips {
