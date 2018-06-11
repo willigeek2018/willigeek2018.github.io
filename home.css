@@ -25,7 +25,6 @@ body {
 
 header {
     min-height: 10vh;
-    border: 2px solid yellow;
     
     display: flex;
     flex-flow: row nowrap;
@@ -34,17 +33,22 @@ header {
 }
 
 .logo {
-    display: inline-block;
-    margin-left: 15px;
+    padding-left: 25px;
 }
 
 .mainNav_List {
-    width: 500px;
-    margin: 0;
+    min-width: 40vw;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.mainNav_List li {
     list-style: none;
 }
 
@@ -66,7 +70,7 @@ header {
     color: #FFC400;
 }
 
-/* MAIN SECTION STYLES */
+/* --- MAIN SECTION STYLES --- */
 
 .homeContents {
     width: 80vw;
@@ -76,10 +80,9 @@ header {
     
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
-    border: 2px solid red;
     color: white;
 }
 
@@ -88,14 +91,12 @@ header {
     font-family: 'BebasNeueRegular',sans-serif;
     letter-spacing: 20px;
     
-    margin: 0;
-    border: 2px solid green;
+    margin: 0 0 0 -95px;
     transform: rotate(-90deg);
 }
 
 .homeDesc {
     max-width: 700px;
-    border: 2px solid blue;
     padding: 20px;
 }
 
@@ -128,7 +129,6 @@ footer {
     min-width: 100vw;
     min-height: 10vh;
     
-    border: 2px solid blue;
     position: fixed;
     
     bottom: 0;
@@ -200,4 +200,73 @@ footer {
     opacity: .7;
 }
 
+
+/* --- RESPONSIVENESS OF HOMEPAGE AT 600px --- */
+
+
+@media screen and (max-width: 600px) {
+    
+    /* HEADER QUERIES */
+    
+    header {
+                min-height: 30vh;
+        
+                background-color: rgba(0,0,0,.7);    
+                
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-start;
+                align-items: center;
+           }
+    .mainNav_ListItem a {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .mainNav_List {
+        min-width: 100vw;
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* CONTENT QUERIES */
+    
+    .homeContents {
+                    width: 80vw;
+                    min-height: 60vh;
+        
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+    .homeGreeting {
+                    transform: none;
+                    font-size: 5em;
+                    margin: 0;
+                }
+    .homeDesc_Name {
+        font-size: 2em;
+        line-height: 1em;
+    }
+    .homeDesc_Profession {
+        font-size: 1em;
+    }
+    .homeDesc {
+        padding: 0;
+    }
+    .me {
+        margin: 0;
+    }
+    .logo {
+        padding-left: 0;
+    }
+}
+
+/* RESPONSIVENESS OF HOMEPAGE AT 360px */
+
+
+@media screen and (max-width: 360px) {
+
+}
 
