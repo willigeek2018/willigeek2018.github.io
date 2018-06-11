@@ -162,7 +162,7 @@ footer {
     color: #FFC400;
     
     font-family: 'Barlow Semi Condensed',sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 .experiments:hover .experimentsTips{
@@ -195,7 +195,7 @@ footer {
     color: #FFC400;
     
     font-family: 'Barlow Semi Condensed',sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 .showreel:hover .showreelTips {
@@ -256,7 +256,7 @@ footer {
         line-height: 1em;
     }
     .homeDesc_Profession {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .homeDesc {
         padding: 0;
