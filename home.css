@@ -10,6 +10,7 @@ body {
     background-color: black;
     background-image: url(images/mydp.png);
     background-size: cover;
+    border: 2px solid green;
     
     background-blend-mode: normal;
     background-position: top;
@@ -24,6 +25,8 @@ body {
 /* HEADER STYLES */
 
 header {
+    min-height: 10vh;
+    border: 2px solid yellow;
     
     display: flex;
     flex-flow: row nowrap;
@@ -33,7 +36,6 @@ header {
 
 .logo {
     display: inline-block;
-    margin: 25px;
 }
 
 .mainNav_List {
@@ -57,7 +59,7 @@ header {
     font-family: 'IBM Plex Mono', sans-serif;
     
     
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .mainNav_ListItem a:hover {
@@ -67,65 +69,28 @@ header {
 /* MAIN SECTION STYLES */
 
 .homeContents {
-    height: 100vh;
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-    color: white;
-}
-
-.homeGreeting {
-    margin: 0;
-    font-family: 'BebasNeueRegular',sans-serif; 
-    font-weight: normal; 
-    
-    font-style: normal;
-    font-size: 25em;
-    
-    transform: rotate(-90deg);
-}
-
-.homeDesc {
-    width: 50%;
-    margin-left: -50px;
-}
-
-.homeDesc_Name {
-    margin: 0;
-    
-    font-size: 9em;
-    font-family: 'IBM Plex Mono',sans-serif;
-    font-weight: bold;
-    
-    text-transform: uppercase;
-    line-height: 1em;
-}
-
-.homeDesc_Profession {
-    
-    font-size: 2em;
-    font-family: 'IBM Plex Mono',sans-serif;
-    font-weight: text;
-    
-    color: #FFC400;  
+    min-height: 80vh;
+    border: 2px solid red;
 }
 
 /* FOOTER SECTION STYLES */
 
 footer {
+    min-width: 100vw;
+    min-height: 10vh;
     
+    border: 1px solid blue;
     position: fixed;
-    bottom: 25px;
+    
+    bottom: 0;
 }
 
 /* Experiment button */
 
 .experiments {
-    position: fixed;
-    left: 25px;
-    bottom: 25px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
 }
 
 .experiments img {
@@ -159,9 +124,9 @@ footer {
 /* Showreel button */
 
 .showreel {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
 }
 
 .showreelTips {
