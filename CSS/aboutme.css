@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 html, body {
     width: 100%;
     height: 100%;
@@ -12,12 +7,15 @@ html, body {
 body {
     background-color: #343d46;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 
 /* ----  HEADER & NAVIGATION  ---- */
 
+#about_me_page{
+    color: #F2C232;
+}
 
 .icon-white {
     color: whitesmoke;
@@ -26,8 +24,6 @@ body {
 .main-nav {
     line-height: 70px;
     min-height: 70px;
-    
-    
 }
 
 .menu {
@@ -45,6 +41,10 @@ body {
     color: #F2C232;
 }
 
+.menu a:active {
+    color: #F2C232;
+}
+
 label {
     margin: 0 0 0 25px;
     line-height: 70px;
@@ -58,6 +58,8 @@ label {
 #toggle {
     display: none;
 }
+
+
 
 /* MEDIA QUERY */
 
@@ -93,101 +95,98 @@ label {
 
 /* ----  MAIN CONTENT  ---- */
 
-#project_page {
-    color: #F2C232;
-}
-
 main {
+    display: grid;
     margin: 0 auto;
+    
     width: 80vw;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    padding: 25px;
+    grid-column-gap: 25px;
 }
 
+.headline {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
 .headline h1 {
-    margin: 25px 0 10px 0;
+    margin: 0;
     font-size: 3em;
     color: #F2C232;
     
-    font-weight: normal;
+    font-weight: SemiBold;
 }
 
 .headline h2 {
-    color: #FAE6C4;
-    font-style: italic;
-    font-weight: 600;
-    letter-spacing: 1px;
+    margin: 0;
 }
 
- /* PROJECTS */
-
-.projects {
-    margin: 100px 0;
-}
-
-.projects_card {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    
-    margin-bottom: 50px;
-}
-
-.project-details {
-    position: relative;
-    height: 351px;
-    padding: 25px;
-    
-    background-color: #4f5b66;
-    
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.project-details h2 {
-    color: #F2C232;
-    font-size: 2em;
-    padding-bottom: 25px;
-}
-
-.project-details h3 {
-    
-    padding-bottom: 25px;
-    
-    color: #FAE6C4;
-    font-style: italic;
-    font-weight: 100;
-    
-    letter-spacing: 3px;
-}
-
-.project-details p {
-    
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: ghostwhite;
-    font-size: 1.2em;
-    font-weight: lighter;
-}
-
-.project-details a{
-    position: absolute;
-    left: 25px;
-    bottom: 25px;
-    
+.headline h2 a{
     display: inline-block;
+    color: #FAE6C4;
+    
     text-decoration: none;
-    padding: 25px 50px;
-    
-    text-transform: uppercase;
+    font-style: italic;
+    font-weight: normal;
     letter-spacing: 1px;
-    color: white;
-    font-weight: bold;
-    
-    background-color: #0060A8;
-    
-    border-radius: 5px;
 }
 
+.headline h2 a:hover{
+    text-decoration: underline;
+}
 
+.profileDesc {
+    grid-column: 1 / 2;
+    grid-row: 2 / span2;
+    
+    color: #A7A2A8;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
 
+.profileDesc a {
+    text-decoration: none;
+    color: white;
+}
+
+.profilePhoto {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 3;
+    
+    width: 100%;
+    height: auto;
+}
+
+.profilePhoto img {
+    width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:850px) {
+    
+    main {
+        
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    
+    .profilePhoto {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+    
+    .profileDesc {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    
+}
 
