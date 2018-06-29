@@ -2,61 +2,59 @@
 <html lang="en">
 
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="I'm a congolese front-end developer, digital designer and illustrator based in Milan. I work with HTML,CSS, Javascript to build beautiful and functional UI.">
     <meta name="author" content="Luhiriri Mudekereza Guillaume">
     <title>Luhiriri Guillaume | Portfolio</title>
     
-    <link rel="stylesheet" href="home.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/home.css">
+    
+    <!-- Font Libraries -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
-  
-   <!-- HEADER -->
-   
-   <header>
-       <a href="/index.html" class="logo"><img src="icons/Logo.svg" alt="Luhiriri Mudekereza Guillaume_logo" width="100"></a>
-       <nav class="mainNav">
-           <ul class="mainNav_List">
-               <li class="mainNav_ListItem"><a href="/project.html">Projects</a></li>
-               <li class="mainNav_ListItem"><a href="">About me</a></li>
-               <li class="mainNav_ListItem"><a href="">Connect</a></li>
-           </ul>
-       </nav>
-   </header>
-   
-   <!-- MAIN -->
-   
-   <main class="homeContents">
-       <h3 class="homeGreeting">HELLO</h3>
-       <div class="homeDesc">
-           <p class="me">I'm</p>
-           <h1 class="homeDesc_Name">Luhiriri Mudekereza Guillaume</h1>
-           <h2 class="homeDesc_Profession">Front-end developer, digital designer and illustrator</h2>
-       </div>
-   </main>
-   
-   <!-- FOOTER -->
-   
-   <footer>
-      
-       <a href="#" class="experiments">
-           <img src="icons/00_Experiments.png" alt="Experiment_icon" width="50">
-           <div class="experimentsTips">Experiments</div>
-       </a>
-       
-       <a href="#" class="showreel">
-           <div class="showreelTips">Showreel</div>
-           <img src="icons/00_Showreel.png" alt="Play Showreel_icon" width="40">
-       </a>
-       
-   </footer>
-    
+    <!-- HEADER -->
+    <header class="main-nav">
+        <label for="toggle" class="icon-white">&#9776;</label>
+        <input type="checkbox" id="toggle">
+
+        <nav class="menu">
+            <a href="#">myWorld</a>
+            <a href="#">aboutMe</a>
+            <a href="#">projX</a>
+            <a href="#">x-periments</a>
+            <a href="#">pokeMe</a>
+        </nav>
+    </header>
+	
+	<!-- MAIN CONTENT -->
+	
+	<main>
+		<div class="core">
+		    <div class="layer_one"> Hi there!</div>
+		    <div class="layer"></div>
+		</div>
+	</main>
+	
+	<!-- FOOTER -->
+	
+	<footer>
+		<p class="copyright">
+		    copyRight &copy; Luhiriri Mudekereza Guillaume | 2018
+		</p>
+	</footer>
+	
+	
 </body>
 
 </html>

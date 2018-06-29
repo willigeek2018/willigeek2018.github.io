@@ -1,0 +1,140 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #343d46;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* ----  HEADER & NAVIGATION  ---- */
+
+
+.icon-white {
+    color: whitesmoke;
+}
+
+.main-nav {
+    line-height: 70px;
+    min-height: 70px;
+}
+
+.menu {
+    margin: 0 0 0 25px;
+}
+.menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 10px;
+    line-height: 70px;
+    
+    clear: left;
+}
+.menu a:hover {
+    color: #F2C232;
+}
+
+label {
+    margin: 0 0 0 25px;
+    line-height: 70px;
+    font-size: 25px;
+    display: none;
+    
+    width: 25px;
+    float: left;
+}
+
+#toggle {
+    display: none;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:750px) {
+    
+    main-nav {
+        background-color: #4f5b66;
+    }
+    
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0;
+    }
+    
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #4f5b66;
+        margin: 0;
+    }
+    
+    #toggle:checked + .menu {
+        display: block;
+        background-color: #4f5b66;
+    }
+}
+
+/* ----  MAIN CONTENT  ---- */
+
+main { 
+    height:80vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Homepage animation */
+
+.core {
+    position: relative;
+    
+    width: 100px;
+    height: 100px;
+    background-color: #F2C232;
+    
+    border-radius: 50%;
+}
+
+.layer_one {
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    
+    opacity: 0;
+    text-align: center;
+    
+    pointer-events: none;
+}
+
+.core:hover .layer_one {
+    transition: transform .3s ease-in-out 0s;
+    transform: scale(5);
+    opacity: 1;
+}
+
+/* ----  FOOTER CONTENT  ---- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright {
+    font-weight: lighter;
+    color: 	#65737e;
+    font-size: .8em;
+}
