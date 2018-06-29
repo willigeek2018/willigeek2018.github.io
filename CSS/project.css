@@ -100,6 +100,8 @@ label {
 main {
     margin: 0 auto;
     width: 80vw;
+    
+    border: 2px solid red;
 }
 
 .headline h1 {
@@ -124,24 +126,26 @@ main {
 }
 
 .projects_card {
+    min-height: 352px;
+    
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     
     margin-bottom: 50px;
 }
 
 .project-details {
-    position: relative;
-    height: 351px;
-    padding: 25px;
-    
-    background-color: #4f5b66;
+    min-height: 352px;
+    padding: 30px;
     
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    
+    background-color: #3C4752;
 }
 
 .project-details h2 {
@@ -165,18 +169,16 @@ main {
     
     font-family: 'IBM Plex Sans', sans-serif;
     color: ghostwhite;
-    font-size: 1.2em;
-    font-weight: lighter;
+    font-weight: 100;
+    line-height: 1.5em;
 }
 
-.project-details a{
-    position: absolute;
-    left: 25px;
-    bottom: 25px;
-    
+.project-details a{ 
     display: inline-block;
     text-decoration: none;
-    padding: 25px 50px;
+    
+    margin-top: 25px;
+    padding: 10px 50px;
     
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -186,8 +188,45 @@ main {
     background-color: #0060A8;
     
     border-radius: 5px;
+    transition: all .2s ease-in-out 0s;
 }
 
+.project-details a:hover {
+    transform: scale(1.1);
+    background-color: #00A87B;
+}
 
+.projects_card:nth-child(even) {
+    flex-flow: row-reverse nowrap;
+}
 
+/* MEDIA QUERY */
+
+@media only screen and (max-width:1040px) {
+    
+    .projects_card, .projects_card:nth-child(even){
+        flex-flow: column nowrap;
+    }
+    
+    .project_thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ----  FOOTER CONTENT  ---- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 10vh;
+}
+
+footer .copyright {
+    font-weight: lighter;
+    color: 	#65737e;
+    font-size: .8em;
+}
 
