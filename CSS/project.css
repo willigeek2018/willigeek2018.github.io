@@ -198,6 +198,11 @@ main {
     background-color: #00A87B;
 }
 
+.project-details a:active {
+    transform: scale(1.1);
+    background-color: #00A87B;
+}
+
 .projects_card:nth-child(even) {
     flex-flow: row-reverse nowrap;
 }
