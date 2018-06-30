@@ -24,9 +24,15 @@ body {
 }
 
 .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
     line-height: 70px;
     min-height: 70px;
     
+    background-color: #343d46;
     
 }
 
@@ -98,10 +104,8 @@ label {
 }
 
 main {
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
     width: 80vw;
-    
-    border: 2px solid red;
 }
 
 .headline h1 {
@@ -202,8 +206,16 @@ main {
 
 @media only screen and (max-width:1040px) {
     
+    main {
+        width: 90vw;
+    }
+    
     .projects_card, .projects_card:nth-child(even){
         flex-flow: column nowrap;
+    }
+    
+    .project_thumbnail {
+        width: 100%;
     }
     
     .project_thumbnail img {
