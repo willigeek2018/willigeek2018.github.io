@@ -142,10 +142,12 @@ main {
     grid-column: 1 / 2;
     grid-row: 2 / span2;
     
-    color: #A7A2A8;
+    color: ghostwhite;
     font-weight: normal;
     font-size: 1.3em;
     line-height: 1.4em;
+    
+    font-family: 'IBM Plex Sans',sans-serif;
 }
 
 .profileDesc a {

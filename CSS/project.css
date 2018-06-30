@@ -108,14 +108,12 @@ main {
     margin: 25px 0 10px 0;
     font-size: 3em;
     color: #F2C232;
-    
-    font-weight: normal;
 }
 
 .headline h2 {
     color: #FAE6C4;
     font-style: italic;
-    font-weight: 600;
+    font-weight: normal;
     letter-spacing: 1px;
 }
 
