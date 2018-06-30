@@ -133,7 +133,7 @@ main {
     background-color: #0060A8;
     
     border-radius: 5px;
-    transition: all .2s ease-in-out 0s;
+    transition: all .1s ease-in-out 0s;
 }
 
 .cta:hover {
@@ -262,10 +262,59 @@ main {
 
 /*  ----- OTHER PROJECTS -----  */
 
-.other-projects h4{
+.other-header h4{
     font-family: 'Barlow Semi Condensed',sans-serif;
     font-weight: 100;
     letter-spacing: 3px;
+    font-size: 1em;
+    text-transform: uppercase;
+    
+    color: #65737e;
+}
+
+.other-header {
+    margin: 50px 0;
+}
+.other-header h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 2em;
+    text-transform: lowercase;
+    
+    color: ghostwhite;
+}
+
+.other-projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other-projects h4 {
+    background-color: #3C4752;
+    padding: 25px;
+    color: #F2C232;
+}
+
+.other-projects a {
+    display: block;
+    text-decoration: none;
+    transition: all .2s ease-in-out 0s;
+    
+    margin-bottom: 50px;
+}
+
+
+.other-projects a:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.ot-genre {
+    font-style: italic;
+    color: #FAE6C4;
+    font-size: .8em;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 /* ----  FOOTER CONTENT  ---- */
@@ -283,3 +332,42 @@ footer .copyright {
     color: 	#65737e;
     font-size: .8em;
 }
+
+/* ---- MEDIA QUERY ---- */
+
+@media only screen and (max-width:750px) {
+    
+    .project-title {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+    }
+    
+    .project-desc {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    
+    .project-desc:nth-child(1){
+        padding-right: 0;
+    }
+    
+    .project-details {
+        flex-flow: row wrap;
+    }
+    
+    .other-projects {
+        flex-flow: column nowrap;
+    }
+    .other-projects > a > img {
+        width: 100%;
+        height: auto;
+    }
+    other-projects 4 {
+        margin-bottom: 25px;
+    }
+    
+    .project-ex-desc {
+    width: 100%;
+}
+}
+
