@@ -175,7 +175,7 @@ main {
     line-height: 1.5em;
 }
 
-.project-details a{ 
+.cta{ 
     display: inline-block;
     text-decoration: none;
     
@@ -193,12 +193,12 @@ main {
     transition: all .2s ease-in-out 0s;
 }
 
-.project-details a:hover {
+.cta:hover {
     transform: scale(1.1);
     background-color: #00A87B;
 }
 
-.project-details a:active {
+.cta:active {
     transform: scale(1.1);
     background-color: #00A87B;
 }
