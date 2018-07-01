@@ -188,7 +188,7 @@ main {
     letter-spacing: 2px;
     font-size: .7em;
     
-    color: ghostwhite;
+    color: 	#a7adba;
     
     padding: 10px 0;
 }
@@ -196,7 +196,9 @@ main {
 .desc-paragraph {
     font-family: 'IBM Plex Sans',sans-serif;
     font-weight: lighter;
-    color: 	#a7adba;
+    color: 	ghostwhite;
+    letter-spacing: 1px;
+    line-height: 1.5em;
 }
 
 .desc-paragraph a {
@@ -337,7 +339,16 @@ footer .copyright {
 
 @media only screen and (max-width:750px) {
     
+    .project-header{
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    
     .project-title {
+        
+        /* this makes the project header looks good on mobile  ... down here ...  */
+        
+        grid-row: 1 / 3;
         flex-flow: column nowrap;
         justify-content: flex-start;
     }
