@@ -12,7 +12,6 @@ html, body {
 body {
     background-color: #343d46;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 600;
 }
 
 
@@ -183,7 +182,6 @@ main {
 
 .desc-header {
     font-family: 'IBM Plex Sans',sans-serif;
-    font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: .7em;
@@ -194,8 +192,8 @@ main {
 }
 
 .desc-paragraph {
-    font-family: 'IBM Plex Sans',sans-serif;
-    font-weight: lighter;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
     color: 	ghostwhite;
     letter-spacing: 1px;
     line-height: 1.5em;

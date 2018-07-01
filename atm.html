@@ -6,108 +6,86 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Discover the user experience project of the ATM kiosk Milan.">
   <title>Luhiriri Guillaume | ATM project</title>
-  <link rel="stylesheet" href="atm.css">
+  <link rel="stylesheet" href="/CSS/atm.css">
   
 </head>
 
 <body>
-    
-    <header>
-        <article class="projectTitle">
-            <h1>ATM Kiosk</h1>
-            <p>User experience</p>
-        </article>
+           
+        <!-- HEADER -->
         
-        <article class="projectDescription">
-            <h2>Description</h2>
-            <p>The project goal is to review the Kiosk user interface in order to make it more usable.</p>
-        </article>
-        
-        <article class="projectResult">
-            <h2>Result</h2>
-            <p>Working low-fidelity prototype that takes into account for the most important features.</p>
-        </article>
+    <header class="main-nav">
+        <label for="toggle" class="icon-white">&#9776;</label>
+        <input type="checkbox" id="toggle">
+
+        <nav class="menu">
+            <a href="index.html" id="home_page">myWorld</a>
+            <a href="aboutme.html" id="about_me_page">aboutMe</a>
+            <a href="project.html" id="project_page">projX</a>
+            <a href="experiment.html" id="experiment_page">x-periments</a>
+            <a href="pokeme.html" id="contact_page">pokeMe</a>
+        </nav>
     </header>
     
-    <details class="projectDetails">
-        <summary>Project details</summary>
-        <article class="instructors">
-            <h3>Instructors</h3>
-            <p>Marco Cattani and Enrico di Giglia</p>
-        </article>
+        <!-- MAIN CONTENT -->
         
-        <article class="role">
-            <h3>Role</h3>
-            <p>User experience and prototyping</p>
-        </article>
-        
-        <article class="typeOfProject">
-            <h3>Type of project</h3>
-            <p>Group (4 members) </p>
-        </article>
-        
-        <article class="partners">
-            <h3>SPD (Scuola Politecnica di Design)</h3>
-            <p>2017 - 2018</p>
-        </article>
-        
-    </details>
-    
-    <main class="theproject">
-        <article class="projectBeginning">
-            <h3>Initial step : observation</h3>
-            <p> There was 2 types of issues,
-                Learnability issues ( eg. too many options leading to confusion,... ) and
-                Efficiency issues ( too many steps to get to buy a ticket, users where lost in particular screens, the Rho Fiera screen through people off... )
-            </p>
-            <img src="images/0_atm_project/00_thekiosk.png" alt="atm kiosk milan welcome screen">
-            <img src="images/0_atm_project/00_thekiosk_1.png" alt="atm kiosk milan select ticket">
-            <img src="images/0_atm_project/00_thekiosk_2.png" alt="atm kiosk milan select ticket">
-            <img src="images/0_atm_project/00_thekiosk_3.png" alt="atm kiosk milan Rho fiera not valid">
-        </article>
-        
-        <article>
-            <img src="images/0_atm_project/01_kiosktesting.png" alt="atm kiosk milan kiosk testing" width="100">
-            <h3>step 2 : kiosk testing</h3>
-            <p>Doing so, enabled us to have even more insights, eg.How to insert the ATM card ?</p>
-        </article>
-        
-        <article>
-            <img src="images/0_atm_project/01_interviews.png" alt="atm kios milan interviews" width="100">
-            <h3>step 3 : interviews</h3>
-            <p>The more mental models we consider while building the user experience, the better.</p>
-        </article>
-        
-        <article>
-            <img src="images/0_atm_project/01_cardsorting.png" alt="atm kiosk milan card sorting" width="100">
-            <h3>step 4 : card sorting</h3>
-            <p>This was very helpful in a way that it helped us simplify the user-journeys.</p>
-        </article>
-        
-        <article>
-            <img src="images/0_atm_project/01_userJourney_2.png" alt="atm kiosk milan personas" width="500">
-            <h3>step 5 : personas and flowchart</h3>
-            <p>We defined 5 personas which are : tourist family, occasional user, weekender, employee commuter and student commuter.
-            Then depending on the different scenario for the ATM kiosk usage, we defined the decision making towards individual goals by the different personas. Hence the flowchart.</p>
-        </article>
-        
-        <article>
-            <img src="images/0_atm_project/0_atmproto_lgepage.png" alt="" width="400">
-            <img src="images/0_atm_project/0_atmproto_homepage.png" alt="" width="400">
-            <img src="images/0_atm_project/0_atmproto_ticket.png" alt="" width="400">
-            <img src="images/0_atm_project/0_atmproto_pmt.png" alt="" width="400">
-            <img src="images/0_atm_project/0_atmproto_pmtcfrm.png" alt="" width="400">
-            <img src="images/0_atm_project/0_atmproto_pmtcfrmfi.png" alt="" width="400">
-            <h3>Final step : prototyping</h3>
-            <p>After that, we opened BALSAMIQ and using the data we collected, came up with a mid-fidelity prototype for the ATM kiosk software. 
-
-            We chose “ The student commuter ” as our main subject and designed the prototype according to her journey.
-
-            On the right, you find one of the action performed by the student ( buying a standard ticket ).</p>
-        </article>
-        
-        <a href="#">Previous project</a>
-        <a href="#">Next project</a>
+    <main class="wrapper">
+                <section class="project-header">
+           
+            <div class="project-title">
+               <div class="title-item">
+                    <h2 class="main-title-projx">ATM kiosk</h2>
+                    <h3 class="main-subtitle-projx">USER EXPERIENCE</h3>
+                </div>
+                <img src="images/4_sunglasshut/03_spd-logo-luhiriri-guillaume.png" alt="">
+            </div>
+            
+            <div class="project-desc">
+               
+                <article>
+                    <h4 class="desc-header">description</h4>
+                    <p class="desc-paragraph">The project goal is to review the Kiosk user interface in order to make it more usable.</p>
+                </article>
+                
+                <article>
+                    <h4 class="desc-header">result</h4>
+                    <p class="desc-paragraph">Working mid-fidelity prototype that takes into account for the most important features.</p>
+                </article>
+                
+            </div>
+            
+            <div class="project-details">
+                <article>
+                    <h4 class="desc-header">roles</h4>
+                    <ul class="desc-paragraph">
+                        <li>user experience</li>
+                        <li>prototyping</li>
+                    </ul>
+                </article>
+                <article>
+                    <h4 class="desc-header">instructors</h4>
+                    <ul class="desc-paragraph">
+                        <li>Marco Cattani</li>
+                        <li>Enrico di Giglia</li>
+                    </ul>
+                </article>
+                <article>
+                    <h4 class="desc-header">team</h4>
+                    <ul class="desc-paragraph">
+                        <li>Miranda Ting</li>
+                        <li>Silvia Bochero</li>
+                        <li>Anoop Bandal</li>
+                    </ul>
+                </article>
+                <article>
+                    <h4 class="desc-header">duration</h4>
+                    <ul class="desc-paragraph">
+                        <li>nov 2017 - Feb 2018</li>
+                    </ul>
+                </article>
+            </div>
+            
+        </section>
     </main>
 </body>
 

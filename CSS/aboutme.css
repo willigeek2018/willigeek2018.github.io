@@ -7,7 +7,6 @@ html, body {
 body {
     background-color: #343d46;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 100;
 }
 
 
@@ -143,16 +142,16 @@ main {
     grid-row: 2 / span2;
     
     color: ghostwhite;
-    font-weight: normal;
-    font-size: 1.3em;
-    line-height: 1.4em;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.5em;
     
     font-family: 'IBM Plex Sans',sans-serif;
 }
 
 .profileDesc a {
     text-decoration: none;
-    color: white;
+    color: #F2C232;
 }
 
 .profilePhoto {

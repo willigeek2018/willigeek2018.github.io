@@ -7,7 +7,6 @@ html, body {
 body {
     background-color: #343d46;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 100;
     height: 100vh;
     overflow: hidden;
 }
