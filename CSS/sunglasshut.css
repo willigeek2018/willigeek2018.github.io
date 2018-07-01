@@ -339,10 +339,13 @@ footer .copyright {
 
 @media only screen and (max-width:750px) {
     
+    main{
+        width: 90vw;
+    }
+    
     .project-header{
         grid-template-rows: 1fr 1fr;
     }
-    
     
     .project-title {
         
