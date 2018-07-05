@@ -113,7 +113,13 @@ label {
 
 main {
     margin: 100px auto 0 auto;
-    width: 80vw;
+    max-width: 1440px;
+}
+
+@media (max-width: 1450px) {
+  main {
+    margin: 100px 20px 0;
+  }
 }
 
 .project-header {
