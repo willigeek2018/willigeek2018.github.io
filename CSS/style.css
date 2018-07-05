@@ -17,6 +17,8 @@ body {
 figure img {
   width: 100%;
   height: auto;
+  
+  margin-bottom: 25px;
 }
 
 /* ----  HEADER & NAVIGATION  ---- */
@@ -297,7 +299,7 @@ figcaption {
 }
 
 .story-img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     
     box-shadow: 0 0 50px rgba(0,0,0,.2);
