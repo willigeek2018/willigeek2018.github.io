@@ -162,6 +162,10 @@ main {
     line-height: 1.5em;
 }
 
+ul.desc-paragraph {
+    padding-left: 15px;
+}
+
 .desc-paragraph a {
     text-decoration: none;
     color: #F2C232;
@@ -173,6 +177,14 @@ main {
     align-items: flex-start;
 }
 
+.project-desc .project-desc-desc {
+    flex-basis: 50%;
+}
+
+.project-desc .project-desc-result {
+    flex-basis: 50%;
+}
+
 .project-desc article:nth-child(1){
     padding-right: 50px;
 }
@@ -182,6 +194,23 @@ main {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.project-details article {
+    flex-basis: 25%;
+}
+
+@media (max-width: 750px) {
+    .project-details article {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .project-details article {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
 }
 
     /* Project banner */
