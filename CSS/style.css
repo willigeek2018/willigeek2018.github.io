@@ -107,10 +107,6 @@ label {
 
 /* ----  MAIN CONTENT  ---- */
 
-#project_page {
-    color: #F2C232;
-}
-
 main {
     margin: 100px auto 0 auto;
     max-width: 1440px;
@@ -120,6 +116,19 @@ main {
   main {
     margin: 100px 20px 0;
   }
+}
+
+.headline h1 {
+    margin: 25px 0 10px 0;
+    font-size: 3em;
+    color: #F2C232;
+}
+
+.headline h2 {
+    color: #FAE6C4; !important
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 1px;
 }
 
 .project-header {
@@ -613,6 +622,43 @@ footer .copyright {
         height: auto;
     }
     
+        /* Project step-by-step procedure */
+    
+    .project-steps {
+        width: 100%;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    
+    .project-step-desc {
+        text-align: center;
+    }
+    
+        /* Personnas & Flowchart images */
+    
+    .persona-flow {
+        position: static;
+        height: auto;
+        
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .flow-image {
+        position: static;
+        max-width: 100%;
+        height: auto;
+    }
+    
+        /* Prototype images-screen */
+    
+    .prototype_image {
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
+        padding: 0;
+    }
     
         /* Project explanation */
     
