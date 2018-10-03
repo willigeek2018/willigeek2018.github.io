@@ -107,22 +107,6 @@ main {
     border-radius: 50%;
 }
 
-.layer_one {
-    position: absolute;
-    top: 40px;
-    left: 25px;
-    
-    opacity: 0;
-    text-align: center;
-    
-    pointer-events: none;
-}
-
-.core:hover .layer_one {
-    transition: transform .3s ease-in-out 0s;
-    transform: scale(5);
-    opacity: 1;
-}
 
 /* ----  FOOTER CONTENT  ---- */
 

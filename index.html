@@ -17,10 +17,10 @@
 
 </head>
 
-<body>
+<body id="homepage">
     <!-- HEADER -->
     <header class="main-nav">
-        <label for="toggle" class="icon-white">&#9776;</label>
+        <label for="toggle" class="icon-white" id="hamburger">&#9776;</label>
         <input type="checkbox" id="toggle">
 
         <nav class="menu">
@@ -34,8 +34,7 @@
 	<!-- MAIN CONTENT -->
 	
 	<main>
-		<div class="core">
-		    <div class="layer_one"> Hi there!</div>
+		<div class="core" id="core">
 		    <div class="layer"></div>
 		</div>
 	</main>
@@ -47,8 +46,20 @@
 		    copyRight &copy; Luhiriri Mudekereza Guillaume | 2018
 		</p>
 	</footer>
-	
-	
+
+    <script type="text/javascript">
+        let core = document.getElementById("core");
+				let homePage = document.getElementById("homepage");
+				let hamburger = document.getElementById("hamburger");
+				core.addEventListener("click", function(){
+					if(homePage.style.backgroundColor = "#343d46"){
+						homePage.style.backgroundColor = "#F2C232";
+						homePage.style.color = "#343d46";
+						hamburger.style.color = "#343d46";
+						return core.style.backgroundColor = "#343d46";
+					}
+				});
+    </script>
 </body>
 
 </html>
