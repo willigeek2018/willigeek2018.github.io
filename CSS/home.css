@@ -17,7 +17,6 @@ body {
 /* ----  HEADER & NAVIGATION  ---- */
 
 .header {
-  border: 2px solid red;
   position: relative;
   width: 100%;
   padding: 25px;
@@ -40,6 +39,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  transition: all .2s ease-in-out;
 }
 
 .header-me--desc {
@@ -135,7 +136,7 @@ body {
   opacity: 1;
 }
 
-.addFocus {
+.openMyDetails + #thumbnail > #thumbnailImg{
   border: 2px solid #F2C232;
 }
 

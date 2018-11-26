@@ -1,13 +1,12 @@
-// Defining variables 
-
+// About me button
+// Finding thumbnail and define variable
 var thumbnail = document.getElementById('thumbnail');
 
 thumbnail.addEventListener('click',openDetails);
 
 function openDetails(){
-  var thubnailImg = document.getElementById('thumbnailImg');
+  var thumbnailImg = document.getElementById('thumbnailImg');
   var myDetails = document.getElementById('myDetails');
   myDetails.classList.toggle('openMyDetails');
-  thubnailImg.classList.toggle('addFocus');
 }
 
