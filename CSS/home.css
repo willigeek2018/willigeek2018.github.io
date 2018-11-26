@@ -150,8 +150,28 @@ body {
 @media (max-width: 900px){
   .header-me--desc{
     width: 85vw;
-    height: 85vh;
+    height: 75vh;
     z-index: 5;
+  }
+  .header-me--desc-detail {
+  }
+}
+
+@media (max-width: 600px) {
+  .header-me--desc-detail h2 {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+  }
+  .header-me--desc-detail h3 {
+    font-size: .6em;
+    line-height: 1.2em;
+  }
+}
+
+@media (max-width: 350px) {
+  .header-me--desc-detail p {
+    display: none;
   }
 }
 
