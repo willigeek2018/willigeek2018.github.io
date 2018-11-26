@@ -17,6 +17,8 @@ body {
 /* ----  HEADER & NAVIGATION  ---- */
 
 .header {
+  border: 2px solid red;
+  position: relative;
   width: 100%;
   padding: 25px;
   background-color: #343d46;
@@ -27,13 +29,12 @@ body {
   z-index: 4;
 }
 
-.header-me {
-  position: relative;
+.header-me--thumbnail {
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
-.header-me img{
+.header-me--thumbnail img{
   border: 2px solid transparent;
   border-radius: 50%;
   width: 100%;
@@ -48,8 +49,8 @@ body {
   background-color: #3d4853;
   padding: 15px;
   position: absolute;
-  top: 60px;
-  left: 0;
+  top: 85px;
+  left: 25px;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -58,7 +59,7 @@ body {
 
   transform: scale(0);
   opacity: 0;
-  transform-origin: 1% 0%;
+  transform-origin: 2% 0%;
   transition: all .2s ease-in-out;
 }
 
@@ -132,6 +133,10 @@ body {
   display: grid;
   transform: scale(1);
   opacity: 1;
+}
+
+.addFocus {
+  border: 2px solid #F2C232;
 }
 
 @media (max-width: 1024px){
