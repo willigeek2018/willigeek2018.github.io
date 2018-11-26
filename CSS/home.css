@@ -165,11 +165,16 @@ body {
   }
   .header-me--desc-detail h3 {
     font-size: .6em;
-    line-height: 1.2em;
+    line-height: 1.5em;
   }
 }
 
 @media (max-width: 350px) {
+  .header-me--desc{
+    width: 85vw;
+    height: 60vh;
+    z-index: 5;
+  }
   .header-me--desc-detail p {
     display: none;
   }
