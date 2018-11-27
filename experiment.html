@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Experiment | Luhiriri Guillaume Portfolio</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-</head>
-<body>
-    
-       <!-- HEADER -->
-        
-    <header class="main-nav">
-        <label for="toggle" class="icon-white">&#9776;</label>
-        <input type="checkbox" id="toggle">
+    <link rel="stylesheet" href="/CSS/home.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-me">
+        <div class="header-me--desc" id="myDetails">
+          <div class="header-me--desc-img">
+            <img src="/images/profilepic.JPG" alt="" />
+          </div>
+          <article class="header-me--desc-detail">
+            <h2>Luhiriri Mudekereza Guillaume</h2>
+            <h3>Congolese | Designer | Developer | Creator</h3>
+            <p>
+              I strive to find creative solutions for businesses through
+              strategic concept, clean code and elegant design.
+            </p>
+          </article>
+          <div class="header-me--desc-cta">
+            <a href="tel:+393472154128" class="desc-cta">Call</a>
+            <a href="mailto:guillaumeluhiriri@gmail.com" class="desc-cta"
+              >Send email</a
+            >
+          </div>
+        </div>
 
-        <nav class="menu">
-            <a href="index.html" id="home_page">myWorld</a>
-            <a href="aboutme.html" id="about_me_page">aboutMe</a>
-            <a href="project.html" id="project_page">projX</a>
-        </nav>
+        <div class="header-me--thumbnail" id="thumbnail">
+          <img
+            src="/images/profilepic.JPG"
+            alt="luhiriri-mudekereza-guillaume"
+            id="thumbnailImg"
+          />
+        </div>
+      </div>
+
+      <h1 class="header--logo"><a href="/index.html">LMG</a></h1>
+
+      <nav class="header--nav">
+        <ul class="menu">
+          <li class="menu--item"><a href="/project.html">projects</a></li>
+          <li class="menu--item"><a href="/experiment.html">experiments</a></li>
+        </ul>
+        <div class="hamburger-menu" id="hamburger">
+          <div class="barOne"></div>
+          <div class="barTwo"></div>
+        </div>
+      </nav>
     </header>
-    
-        <!-- MAIN -->
-        
-    <main>
-       
-        <div class="headline">
-	        <h1 class="page_title">Xperiments</h1>
-	        <h2><a href="https://www.instagram.com/willy_da_man/">Fun projects that i've worked on.</a></h2>
-	    </div>
-       
-        
-        <!-- Solar system CodePen -->
-        
-            <p data-height="265" data-theme-id="dark" data-slug-hash="ZRNxYV" data-default-tab="result" data-user="willigeek2018" data-embed-version="2" data-pen-title="Solar System" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/willigeek2018/pen/ZRNxYV/">Solar System</a> by LUHIRIRI MUDEKEREZA GUILLAUME (<a href="https://codepen.io/willigeek2018">@willigeek2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-        
-        <!-- Sunset Animation -->
-        
-            
-        
-     </main>
-    
-</body>
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li class="mobile-menu__item"><a href="/project.html">projects</a></li>
+      <li class="mobile-menu__item">
+        <a href="/experiment.html">experiments</a>
+      </li>
+    </ul>
+    <main class="main-wrapper"></main>
+    <!-- FOOTER -->
+
+    <footer>
+      <p class="copyright">
+        Copyright &copy; Luhiriri Mudekereza Guillaume | 2018
+      </p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="/main.js"></script>
+  </body>
 </html>

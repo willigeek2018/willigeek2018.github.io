@@ -1,246 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Find out how my team and I  restyled the Atm application and the reasoning behind.">
-    <title>Atm Web application | Luhiriri Guillaume </title>
-    <link rel="stylesheet" href="/CSS/atmapp.csss">
-    <link rel="stylesheet" href="/CSS/style.css">
-    
-</head>
-<body>
-        <!-- HEADER -->
-        
-    <header class="main-nav">
-        <label for="toggle" class="icon-white">&#9776;</label>
-        <input type="checkbox" id="toggle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find out how my team and I  restyled the Atm application and the reasoning behind."
+    />
+    <title>Atm Web application | Luhiriri Guillaume</title>
+    <link rel="stylesheet" href="/CSS/home.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-me">
+        <div class="header-me--desc" id="myDetails">
+          <div class="header-me--desc-img">
+            <img src="/images/profilepic.JPG" alt="" />
+          </div>
+          <article class="header-me--desc-detail">
+            <h2>Luhiriri Mudekereza Guillaume</h2>
+            <h3>Congolese | Designer | Developer | Creator</h3>
+            <p>
+              I strive to find creative solutions for businesses through
+              strategic concept, clean code and elegant design.
+            </p>
+          </article>
+          <div class="header-me--desc-cta">
+            <a href="tel:+393472154128" class="desc-cta">Call</a>
+            <a href="mailto:guillaumeluhiriri@gmail.com" class="desc-cta"
+              >Send email</a
+            >
+          </div>
+        </div>
 
-        <nav class="menu">
-            <a href="index.html" id="home_page">myWorld</a>
-            <a href="aboutme.html" id="about_me_page">aboutMe</a>
-            <a href="project.html" id="project_page">projX</a>
-            <a href="pokeme.html">pokeMe</a>
-        </nav>
+        <div class="header-me--thumbnail" id="thumbnail">
+          <img
+            src="/images/profilepic.JPG"
+            alt="luhiriri-mudekereza-guillaume"
+            id="thumbnailImg"
+          />
+        </div>
+      </div>
+
+      <h1 class="header--logo"><a href="/index.html">LMG</a></h1>
+
+      <nav class="header--nav">
+        <ul class="menu">
+          <li class="menu--item"><a href="/project.html">projects</a></li>
+          <li class="menu--item"><a href="/experiment.html">experiments</a></li>
+        </ul>
+        <div class="hamburger-menu" id="hamburger">
+          <div class="barOne"></div>
+          <div class="barTwo"></div>
+        </div>
+      </nav>
     </header>
-    
-        <!-- MAIN CONTENT -->
-        
-    <main class="wrapper">
-               
-                <!-- Project Header -->
-               
-        <section class="project-header">
-           
-            <div class="project-title">
-               <div class="title-item">
-                    <h2 class="main-title-projx">ATM webapp</h2>
-                    <h3 class="main-subtitle-projx">USER EXPERIENCE & USER INTERFACE</h3>
-                </div>
-                <img src="images/4_sunglasshut/03_spd-logo-luhiriri-guillaume.png" alt="">
-            </div>
-            
-            <div class="project-desc">
-               
-                <article class="project-desc-desc">
-                    <h4 class="desc-header">description</h4>
-                    <p class="desc-paragraph">Analyze the flow and application structure, with an eye on the proper use of the key functions. Study how to improve the look and feel of the WebApp.</p>
-                </article>
-                
-                <article class="project-desc-result">
-                    <h4 class="desc-header">result</h4>
-                    <p class="desc-paragraph">Working high-fidelity prototype that takes into account for the ticketing feature.</p>
-                </article>
-                
-            </div>
-            
-            <div class="project-details">
-                <article>
-                    <h4 class="desc-header">roles</h4>
-                    <ul class="desc-paragraph">
-                        <li>user experience</li>
-                        <li>branding</li>
-                        <li>user interface</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">instructors</h4>
-                    <ul class="desc-paragraph">
-                        <li>Marco Cattani</li>
-                        <li>Enrico di Giglia</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">team</h4>
-                    <ul class="desc-paragraph">
-                        <li>Miranda Ting</li>
-                        <li>Silvia Bochero</li>
-                        <li>Anoop Bandal</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">duration</h4>
-                    <ul class="desc-paragraph">
-                        <li>nov 2017 - Feb 2018</li>
-                    </ul>
-                </article>
-            </div>
-            
-        </section>
-        
-                <!-- Project Banner -->
-                
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li class="mobile-menu__item"><a href="/project.html">projects</a></li>
+      <li class="mobile-menu__item">
+        <a href="/experiment.html">experiments</a>
+      </li>
+    </ul>
+    <!-- MAIN CONTENT -->
+
+    <main class="main-wrapper">
+      <!-- Project Header -->
+
+      <section class="project-header">
+        <div class="project-title">
+          <div class="title-item">
+            <h2 class="main-title-projx">ATM webapp</h2>
+            <h3 class="main-subtitle-projx">
+              USER EXPERIENCE & USER INTERFACE
+            </h3>
+          </div>
+          <img
+            src="images/4_sunglasshut/03_spd-logo-luhiriri-guillaume.png"
+            alt=""
+          />
+        </div>
+
+        <div class="project-desc">
+          <article class="project-desc-desc">
+            <h4 class="desc-header">description</h4>
+            <p class="desc-paragraph">
+              Analyze the flow and application structure, with an eye on the
+              proper use of the key functions. Study how to improve the look and
+              feel of the WebApp.
+            </p>
+          </article>
+
+          <article class="project-desc-result">
+            <h4 class="desc-header">result</h4>
+            <p class="desc-paragraph">
+              Working high-fidelity prototype that takes into account for the
+              ticketing feature.
+            </p>
+          </article>
+        </div>
+
+        <div class="project-details">
+          <article>
+            <h4 class="desc-header">roles</h4>
+            <ul class="desc-paragraph">
+              <li>user experience</li>
+              <li>branding</li>
+              <li>user interface</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">instructors</h4>
+            <ul class="desc-paragraph">
+              <li>Marco Cattani</li>
+              <li>Enrico di Giglia</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">team</h4>
+            <ul class="desc-paragraph">
+              <li>Miranda Ting</li>
+              <li>Silvia Bochero</li>
+              <li>Anoop Bandal</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">duration</h4>
+            <ul class="desc-paragraph">
+              <li>nov 2017 - Feb 2018</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Project Banner -->
+
+      <figure>
+        <img
+          src="images/5_atm_webapp/0_atm_webapp_banner_luhiriri_guillaume@2x.png"
+          alt="atm-webapp-luhiriri-guillaume"
+        />
+      </figure>
+
+      <!-- Project Explanations -->
+
+      <section class="project-explanation">
+        <h3 class="explain-title-up">main screens of the</h3>
+        <h2 class="explain-title-bottom">Initial application</h2>
+      </section>
+
+      <!-- The initial screens setOne -->
+
+      <section class="initial-screens-setOne">
         <figure>
-          <img src="images/5_atm_webapp/0_atm_webapp_banner_luhiriri_guillaume@2x.png" alt="atm-webapp-luhiriri-guillaume">
+          <img
+            src="images/5_atm_webapp/atm-app-s0-luhiriri-guillaume@2x.png"
+            alt="atm-app-homepage-luhiriri-guillaume"
+            class="init-screen-images"
+          />
+          <figcaption>Fig.1 - Homepage</figcaption>
         </figure>
-                
-                <!-- Project Explanations -->
-                
-        <section class="project-explanation">
-            <h3 class="explain-title-up">main screens of the</h3>
-            <h2 class="explain-title-bottom">Initial application</h2>
-        </section>
-        
-                    <!-- The initial screens setOne -->
-                    
-        <section class="initial-screens-setOne">
-            <figure>
-                <img src="images/5_atm_webapp/atm-app-s0-luhiriri-guillaume@2x.png" alt="atm-app-homepage-luhiriri-guillaume" class="init-screen-images">
-                <figcaption>Fig.1 - Homepage</figcaption>
-            </figure>
-            <figure>
-                <img src="images/5_atm_webapp/atm-app-s1_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-my-tickets-luhiriri-guillaume" class="init-screen-images">
-                <figcaption>Fig.2 - My tickets</figcaption>
-            </figure>
-            <figure>
-                <img src="images/5_atm_webapp/atm-app-s2_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-luhiriri-guillaume-cart" class="init-screen-images">
-                <figcaption>Fig.3 - Cart</figcaption>
-            </figure>
-            
-        </section>
-           
-                   <!-- The initial screens setTwo -->
-           
-        <section class="initial-screens-setTwo">
-            
-            <figure>
-                <img src="images/5_atm_webapp/atm-app-s3_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-newtickets-luhiriri" class="init-screen-imageTwo">
-                <figcaption>Fig.4 - New tickets</figcaption>
-            </figure>
-            <figure>
-                <img src="images/5_atm_webapp/atm-app-s4_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-validation-luhiriri-guillaume" class="init-screen-imageTwo">
-                <figcaption>Fig.5 - Qr code & validation</figcaption>
-            </figure>
-            
-        </section>
-        
-                <!-- Storyboarding -->
-                
-        <section class="project-explanation">
-            <h3 class="explain-title-up">First thing first</h3>
-            <h2 class="explain-title-bottom">storyboarding</h2>
-            <p class="desc-paragraph">This stage was all about defining our key features, the smartest route to complete a task and how to visualize them.</p>
-        </section>
-        
-                <!-- Storyboarding images -->
-                
-        <div class="storyboarding">
-            <img src="images/5_atm_webapp/03_sketchesapp_0@2x.png" class="story-img">
-            <img src="images/5_atm_webapp/03_sketchesapp_1@2x.png" class="story-img">
-            <img src="images/5_atm_webapp/03_sketchesapp_2@2x.png" class="story-img">
-            <img src="images/5_atm_webapp/03_sketchesapp_3@2x.png" class="story-img">
-        </div>
-        
-                <!-- branding -->
-        
-        <section class="project-explanation">
-            <h3 class="explain-title-up">we defined the new look & feel </h3>
-            <h2 class="explain-title-bottom">branding & typography</h2>
-            <p class="desc-paragraph">The color palette consist of the primary color from the ATM logo and shades of grey and white to use for different content.The fonts used for heading and titles is BARLOW SEMI CONDENSED and ROBOTO for paragraphs.One solution to confusion was to have a icon-centric design to push the idea that we convey.</p>
-        </section>
-        
-                <!-- branding image -->
-                
-        <div class="branding-image">
-            <img src="images/5_atm_webapp/atm_branding@2x.png" alt="branding-atm-webapp-luhiriri-guillaume">
-        </div>
-        
-                <!-- The final prototype -->
-        
-        <section class="project-explanation">
-            <h3 class="explain-title-up">main screens of the</h3>
-            <h2 class="explain-title-bottom">final prototype</h2>
-        </section>
-        
-                <!-- The final screens setOne -->
-                    
-        <section class="initial-screens-setOne">
-            <figure>
-                <img src="images/5_atm_webapp/atm-napp-s0_iphone6splusspacegrey_portrait@2x.png" class="init-screen-images">
-                <figcaption>Fig.1 - Homepage</figcaption>
-            </figure>
-            <figure>
-                <img src="images/5_atm_webapp/atm-napp-s1_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-my-tickets-luhiriri-guillaume" class="init-screen-images">
-                <figcaption>Fig.2 - My tickets</figcaption>
-            </figure>
-            <figure>
-                <img src="images/5_atm_webapp/atm-napp-s2_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-luhiriri-guillaume-cart" class="init-screen-images">
-                <figcaption>Fig.3 - Cart</figcaption>
-            </figure>
-            
-        </section>
-        
-                <!-- The final screens setTwo -->
-           
-        <section class="initial-screens-setTwo">
-            
-            <figure>
-                <img src="images/5_atm_webapp/atm-napp-s3_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-newtickets-luhiriri" class="init-screen-imageTwo">
-                <figcaption>Fig.4 - New tickets</figcaption>
-            </figure>
-            <figure>
-                <img src="images/5_atm_webapp/atm-napp-s4_iphone6splusspacegrey_portrait@2x.png" alt="atm-webapp-validation-luhiriri-guillaume" class="init-screen-imageTwo">
-                <figcaption>Fig.5 - Qr code & validation</figcaption>
-            </figure>
-            
-        </section>
-        
-                <!-- CTA -->
-                
-        <div class="cta-centered">
-            <a href="#" class="cta">view prototype</a>
-        </div>
-        
-                <!-- Discover other projects -->
-                
-        <div class="other-header">
-            <h4>now that you are here</h4>
-            <h3>discover other projects</h3>
-        </div>
-        
-        <section class="other-projects">
-            <a href="/atm.html">
-                <img src="images/4_sunglasshut/04-atm-biglietti-metro@2x.jpg" alt="atm-biglietti-metro" width="300">
-                <h4>ATM kiosk<br> <span class="ot-genre">UX . UI</span></h4>
-            </a>
-            <a href="/thetrumpet.html">
-                <img src="images/4_sunglasshut/06-thetrumpet-luhiriri-guillaume-2x.jpg" alt="thetrumpet-luhiriri-guillaume" width="300">
-                <h4>The trumpet<br> <span class="ot-genre">DIGITAL TYPOGRAPHY, BRANDING & UI</span></h4>
-            </a>
-            <a href="/maserati.html">
-                <img src="images/0_atm_project/02-maserati-luhiriri-guillaume@2x.png" alt="thetrumpet-luhiriri-guillaume" width="300">
-                <h4>Maserati<br> <span class="ot-genre">ART DIRECTION, UX & UI</span></h4>
-            </a>
-        </section>
-        
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-app-s1_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-my-tickets-luhiriri-guillaume"
+            class="init-screen-images"
+          />
+          <figcaption>Fig.2 - My tickets</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-app-s2_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-luhiriri-guillaume-cart"
+            class="init-screen-images"
+          />
+          <figcaption>Fig.3 - Cart</figcaption>
+        </figure>
+      </section>
+
+      <!-- The initial screens setTwo -->
+
+      <section class="initial-screens-setTwo">
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-app-s3_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-newtickets-luhiriri"
+            class="init-screen-imageTwo"
+          />
+          <figcaption>Fig.4 - New tickets</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-app-s4_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-validation-luhiriri-guillaume"
+            class="init-screen-imageTwo"
+          />
+          <figcaption>Fig.5 - Qr code & validation</figcaption>
+        </figure>
+      </section>
+
+      <!-- Storyboarding -->
+
+      <section class="project-explanation">
+        <h3 class="explain-title-up">First thing first</h3>
+        <h2 class="explain-title-bottom">storyboarding</h2>
+        <p class="desc-paragraph">
+          This stage was all about defining our key features, the smartest route
+          to complete a task and how to visualize them.
+        </p>
+      </section>
+
+      <!-- Storyboarding images -->
+
+      <div class="storyboarding">
+        <img
+          src="images/5_atm_webapp/03_sketchesapp_0@2x.png"
+          class="story-img"
+        />
+        <img
+          src="images/5_atm_webapp/03_sketchesapp_1@2x.png"
+          class="story-img"
+        />
+        <img
+          src="images/5_atm_webapp/03_sketchesapp_2@2x.png"
+          class="story-img"
+        />
+        <img
+          src="images/5_atm_webapp/03_sketchesapp_3@2x.png"
+          class="story-img"
+        />
+      </div>
+
+      <!-- branding -->
+
+      <section class="project-explanation">
+        <h3 class="explain-title-up">we defined the new look & feel</h3>
+        <h2 class="explain-title-bottom">branding & typography</h2>
+        <p class="desc-paragraph">
+          The color palette consist of the primary color from the ATM logo and
+          shades of grey and white to use for different content.The fonts used
+          for heading and titles is BARLOW SEMI CONDENSED and ROBOTO for
+          paragraphs.One solution to confusion was to have a icon-centric design
+          to push the idea that we convey.
+        </p>
+      </section>
+
+      <!-- branding image -->
+
+      <div class="branding-image">
+        <img
+          src="images/5_atm_webapp/atm_branding@2x.png"
+          alt="branding-atm-webapp-luhiriri-guillaume"
+        />
+      </div>
+
+      <!-- The final prototype -->
+
+      <section class="project-explanation">
+        <h3 class="explain-title-up">main screens of the</h3>
+        <h2 class="explain-title-bottom">final prototype</h2>
+      </section>
+
+      <!-- The final screens setOne -->
+
+      <section class="initial-screens-setOne">
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-napp-s0_iphone6splusspacegrey_portrait@2x.png"
+            class="init-screen-images"
+          />
+          <figcaption>Fig.1 - Homepage</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-napp-s1_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-my-tickets-luhiriri-guillaume"
+            class="init-screen-images"
+          />
+          <figcaption>Fig.2 - My tickets</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-napp-s2_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-luhiriri-guillaume-cart"
+            class="init-screen-images"
+          />
+          <figcaption>Fig.3 - Cart</figcaption>
+        </figure>
+      </section>
+
+      <!-- The final screens setTwo -->
+
+      <section class="initial-screens-setTwo">
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-napp-s3_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-newtickets-luhiriri"
+            class="init-screen-imageTwo"
+          />
+          <figcaption>Fig.4 - New tickets</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/5_atm_webapp/atm-napp-s4_iphone6splusspacegrey_portrait@2x.png"
+            alt="atm-webapp-validation-luhiriri-guillaume"
+            class="init-screen-imageTwo"
+          />
+          <figcaption>Fig.5 - Qr code & validation</figcaption>
+        </figure>
+      </section>
+      <!-- Discover other projects -->
+
+      <div class="other-header">
+        <h4>now that you are here</h4>
+        <h3>discover other projects</h3>
+      </div>
+
+      <section class="other-projects">
+        <a href="/atm.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="images/4_sunglasshut/04-atm-biglietti-metro@2x.jpg"
+              alt="atm-biglietti-metro"
+            />
+          </div>
+          <div class="other-projects__desc">
+            <h4>ATM kiosk</h4>
+            <h5 class="ot-genre">UX . UI</h5>
+          </div>
+        </a>
+        <a href="/thetrumpet.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="images/4_sunglasshut/06-thetrumpet-luhiriri-guillaume-2x.jpg"
+              alt="thetrumpet-luhiriri-guillaume"
+            />
+          </div>
+          <div class="other-projects__desc">
+            <h4>The Trumpet</h4>
+            <h5 class="ot-genre">TYPOGRAPHY, BRANDING & UI</h5>
+          </div>
+        </a>
+        <a href="/maserati.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="/images/3_projects/04_maserati_ui_luhiriri_guillaume.jpg"
+              alt="maserati-luhiriri-guillaume"
+            />
+          </div>
+          <div class="other-projects__desc">
+            <h4>Maserati</h4>
+            <h5 class="ot-genre">ART DIRECTION, UX & UI</h5>
+          </div>
+        </a>
+      </section>
     </main>
-    
-            <!-- FOOTER -->
-    
+
+    <!-- FOOTER -->
+
     <footer>
-		<p class="copyright">
-		    copyRight &copy; Luhiriri Mudekereza Guillaume | 2018
-		</p>
-	</footer>
-</body>
+        <p class="copyright">
+          Copyright &copy; Luhiriri Mudekereza Guillaume | 2018
+        </p>
+      </footer>
+  
+      <!-- Javascript -->
+      <script src="/main.js"></script>
+  </body>
 </html>

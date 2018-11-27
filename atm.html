@@ -1,242 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Discover the user experience project of the ATM kiosk Milan.">
-  <title>ATM kiosk| Luhiriri Guillaume</title>
-  <link rel="stylesheet" href="/CSS/atm.csss">
-  <link rel="stylesheet" href="/CSS/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the user experience project of the ATM kiosk Milan."
+    />
+    <title>ATM kiosk| Luhiriri Guillaume</title>
+    <link rel="stylesheet" href="/CSS/home.css" />
+  </head>
 
-<body>
-           
-        <!-- HEADER -->
-        
-    <header class="main-nav">
-        <label for="toggle" class="icon-white">&#9776;</label>
-        <input type="checkbox" id="toggle">
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-me">
+        <div class="header-me--desc" id="myDetails">
+          <div class="header-me--desc-img">
+            <img src="/images/profilepic.JPG" alt="" />
+          </div>
+          <article class="header-me--desc-detail">
+            <h2>Luhiriri Mudekereza Guillaume</h2>
+            <h3>Congolese | Designer | Developer | Creator</h3>
+            <p>
+              I strive to find creative solutions for businesses through
+              strategic concept, clean code and elegant design.
+            </p>
+          </article>
+          <div class="header-me--desc-cta">
+            <a href="tel:+393472154128" class="desc-cta">Call</a>
+            <a href="mailto:guillaumeluhiriri@gmail.com" class="desc-cta"
+              >Send email</a
+            >
+          </div>
+        </div>
 
-        <nav class="menu">
-            <a href="index.html" id="home_page">myWorld</a>
-            <a href="aboutme.html" id="about_me_page">aboutMe</a>
-            <a href="project.html" id="project_page">projX</a>
-            <a href="pokeme.html">pokeMe</a>
-        </nav>
+        <div class="header-me--thumbnail" id="thumbnail">
+          <img
+            src="/images/profilepic.JPG"
+            alt="luhiriri-mudekereza-guillaume"
+            id="thumbnailImg"
+          />
+        </div>
+      </div>
+
+      <h1 class="header--logo"><a href="/index.html">LMG</a></h1>
+
+      <nav class="header--nav">
+        <ul class="menu">
+          <li class="menu--item"><a href="/project.html">projects</a></li>
+          <li class="menu--item"><a href="/experiment.html">experiments</a></li>
+        </ul>
+        <div class="hamburger-menu" id="hamburger">
+          <div class="barOne"></div>
+          <div class="barTwo"></div>
+        </div>
+      </nav>
     </header>
-    
-        <!-- MAIN CONTENT -->
-        
-    <main class="wrapper">
-               
-                <!-- Project Header -->
-               
-                <section class="project-header">
-           
-            <div class="project-title">
-               <div class="title-item">
-                    <h2 class="main-title-projx">ATM kiosk</h2>
-                    <h3 class="main-subtitle-projx">USER EXPERIENCE</h3>
-                </div>
-                <img src="images/4_sunglasshut/03_spd-logo-luhiriri-guillaume.png" alt="">
-            </div>
-            
-            <div class="project-desc">
-               
-                <article class="project-desc-desc">
-                    <h4 class="desc-header">description</h4>
-                    <p class="desc-paragraph">The project goal is to review the Kiosk user interface in order to make it more usable.</p>
-                </article>
-                
-                <article class="project-desc-result">
-                    <h4 class="desc-header">result</h4>
-                    <p class="desc-paragraph">Working mid-fidelity prototype that takes into account for the most important features.</p>
-                </article>
-                
-            </div>
-            
-            <div class="project-details">
-                <article>
-                    <h4 class="desc-header">roles</h4>
-                    <ul class="desc-paragraph">
-                        <li>user experience</li>
-                        <li>prototyping</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">instructors</h4>
-                    <ul class="desc-paragraph">
-                        <li>Marco Cattani</li>
-                        <li>Enrico di Giglia</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">team</h4>
-                    <ul class="desc-paragraph">
-                        <li>Miranda Ting</li>
-                        <li>Silvia Bochero</li>
-                        <li>Anoop Bandal</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">duration</h4>
-                    <ul class="desc-paragraph">
-                        <li>nov 2017 - Feb 2018</li>
-                    </ul>
-                </article>
-            </div>
-            
+
+    <ul class="mobile-menu" id="mobileMenu">
+      <li class="mobile-menu__item"><a href="/project.html">projects</a></li>
+      <li class="mobile-menu__item">
+        <a href="/experiment.html">experiments</a>
+      </li>
+    </ul>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-wrapper">
+      <!-- Project Header -->
+
+      <section class="project-header">
+        <div class="project-title">
+          <div class="title-item">
+            <h2 class="main-title-projx">ATM kiosk</h2>
+            <h3 class="main-subtitle-projx">USER EXPERIENCE</h3>
+          </div>
+          <img
+            src="images/4_sunglasshut/03_spd-logo-luhiriri-guillaume.png"
+            alt=""
+          />
+        </div>
+
+        <div class="project-desc">
+          <article class="project-desc-desc">
+            <h4 class="desc-header">description</h4>
+            <p class="desc-paragraph">
+              The project goal is to review the Kiosk user interface in order to
+              make it more usable.
+            </p>
+          </article>
+
+          <article class="project-desc-result">
+            <h4 class="desc-header">result</h4>
+            <p class="desc-paragraph">
+              Working mid-fidelity prototype that takes into account for the
+              most important features.
+            </p>
+          </article>
+        </div>
+
+        <div class="project-details">
+          <article>
+            <h4 class="desc-header">roles</h4>
+            <ul class="desc-paragraph">
+              <li>user experience</li>
+              <li>prototyping</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">instructors</h4>
+            <ul class="desc-paragraph">
+              <li>Marco Cattani</li>
+              <li>Enrico di Giglia</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">team</h4>
+            <ul class="desc-paragraph">
+              <li>Miranda Ting</li>
+              <li>Silvia Bochero</li>
+              <li>Anoop Bandal</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">duration</h4>
+            <ul class="desc-paragraph">
+              <li>nov 2017 - Feb 2018</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Project Banner -->
+
+      <figure>
+        <img
+          src="images/0_atm_project/atm-biglietti-metro@2x.png"
+          alt="atm biglietti metro luhiriri guillaume"
+        />
+      </figure>
+
+      <!-- Project Explanations -->
+
+      <section class="project-explanation">
+        <h3 class="explain-title-up">Initial step</h3>
+        <h2 class="explain-title-bottom">Observation</h2>
+        <p class="desc-paragraph">
+          There was 2 types of issues, Learnability issues ( eg. too many
+          options leading to confusion,… ) and Efficiency issues ( too many
+          steps to get to buy a ticket, users where lost in particular screens,
+          the Rho Fiera screen through people off… )
+        </p>
+      </section>
+
+      <!-- Project Observation photos -->
+
+      <div class="project-obs-images">
+        <img
+          src="images/0_atm_project/00_thekiosk@2x.png"
+          alt="atm-kiosk-milan-luhiriri"
+          class="obs-image"
+        />
+        <img
+          src="images/0_atm_project/00_thekiosk_1@2x.png"
+          alt="atm-kiosk-milan-luhiriri"
+          class="obs-image"
+        />
+        <img
+          src="images/0_atm_project/00_thekiosk_2@2x.png"
+          alt="atm-kiosk-milan-luhiriri"
+          class="obs-image"
+        />
+        <img
+          src="images/0_atm_project/00_thekiosk_3@2x.png"
+          alt="atm-kiosk-milan-luhiriri"
+          class="obs-image"
+        />
+      </div>
+
+      <!-- Project step-by-step procedure -->
+
+      <div class="procedure">
+        <section class="project-steps">
+          <div class="project-step-icon">
+            <img
+              src="images/0_atm_project/01_kiosktesting@2x.png"
+              alt="atm-kiosk-testing-luhiriri-guillaume"
+              width="100"
+            />
+          </div>
+
+          <div class="project-step-desc">
+            <h3 class="explain-title-up">step 2</h3>
+            <h2 class="explain-title-bottom">kiosk testing</h2>
+            <p class="desc-paragraph">
+              Doing so, enabled us to have even more insights, eg.How to insert
+              the ATM card ?
+            </p>
+          </div>
         </section>
-        
-                <!-- Project Banner -->
-                
-                <figure>
-                  <img src="images/0_atm_project/atm-biglietti-metro@2x.png" alt="atm biglietti metro luhiriri guillaume"> </figure>
-                
-                <!-- Project Explanations -->
-                
-                <section class="project-explanation">
-                    <h3 class="explain-title-up">Initial step</h3>
-                    <h2 class="explain-title-bottom">Observation</h2>
-                    <p class="desc-paragraph">There was 2 types of issues, Learnability issues ( eg. too many options leading to confusion,… ) and Efficiency issues ( too many steps to get to buy a ticket, users where lost in particular screens, the Rho Fiera screen through people off… )</p>
-                </section>
-                
-                <!-- Project Observation photos -->
-                
-                <div class="project-obs-images">
-                    <img src="images/0_atm_project/00_thekiosk@2x.png" alt="atm-kiosk-milan-luhiriri" class="obs-image">
-                    <img src="images/0_atm_project/00_thekiosk_1@2x.png" alt="atm-kiosk-milan-luhiriri" class="obs-image">
-                    <img src="images/0_atm_project/00_thekiosk_2@2x.png" alt="atm-kiosk-milan-luhiriri" class="obs-image">
-                    <img src="images/0_atm_project/00_thekiosk_3@2x.png" alt="atm-kiosk-milan-luhiriri" class="obs-image">
-                </div>
-                
-                <!-- Project step-by-step procedure -->
-                
-                <div class="procedure">
-                    <section class="project-steps">
 
-                       <div class="project-step-icon">
-                           <img src="images/0_atm_project/01_kiosktesting@2x.png" alt="atm-kiosk-testing-luhiriri-guillaume" width="100">
-                       </div>
+        <section class="project-steps">
+          <div class="project-step-icon">
+            <img
+              src="images/0_atm_project/01_interviews@2x.png"
+              alt="atm-kiosk-testing-luhiriri-guillaume"
+              width="100"
+            />
+          </div>
 
-                       <div class="project-step-desc">
-                            <h3 class="explain-title-up">step 2</h3>
-                            <h2 class="explain-title-bottom">kiosk testing</h2>
-                            <p class="desc-paragraph">Doing so, enabled us to have even more insights, eg.How to insert the ATM card ?</p>
-                        </div>
+          <div class="project-step-desc">
+            <h3 class="explain-title-up">step 3</h3>
+            <h2 class="explain-title-bottom">interviews</h2>
+            <p class="desc-paragraph">
+              The more mental models we consider while building the user
+              experience, the better.
+            </p>
+          </div>
+        </section>
 
-                    </section>
+        <section class="project-steps">
+          <div class="project-step-icon">
+            <img
+              src="images/0_atm_project/01_cardsorting@2x.png"
+              alt="atm-kiosk-testing-luhiriri-guillaume"
+              width="100"
+            />
+          </div>
 
-                    <section class="project-steps">
+          <div class="project-step-desc">
+            <h3 class="explain-title-up">step 4</h3>
+            <h2 class="explain-title-bottom">card sorting</h2>
+            <p class="desc-paragraph">
+              This was very helpful in a way that it helped us simplify the
+              user-journeys.
+            </p>
+          </div>
+        </section>
 
-                       <div class="project-step-icon">
-                           <img src="images/0_atm_project/01_interviews@2x.png" alt="atm-kiosk-testing-luhiriri-guillaume" width="100">
-                       </div>
+        <section class="project-steps">
+          <div class="project-step-desc">
+            <h3 class="explain-title-up">step 5</h3>
+            <h2 class="explain-title-bottom">personas & flowchart</h2>
+            <p class="desc-paragraph">
+              We defined 5 personas which are : tourist family, occasional user,
+              weekender, employee commuter and student commuter.
+              <br /><br />Then depending on the different scenario for the ATM
+              kiosk usage, we defined the decision making towards individual
+              goals by the different personas. Hence the flowchart.
+            </p>
+          </div>
+        </section>
+      </div>
 
-                       <div class="project-step-desc">
-                            <h3 class="explain-title-up">step 3</h3>
-                            <h2 class="explain-title-bottom">interviews</h2>
-                            <p class="desc-paragraph">The more mental models we consider while building the user experience, the better.</p>
-                        </div>
+      <!-- Personnas & Flowchart images -->
 
-                    </section>
+      <div class="persona-flow">
+        <img
+          src="images/0_atm_project/01_userJourney_2@2x.png"
+          alt="user-journey"
+          class="flow-image"
+        />
+        <img
+          src="images/0_atm_project/01_userJourney_1@2x.png"
+          alt="user-journey"
+          class="flow-image flow-two"
+        />
+        <img
+          src="images/0_atm_project/01_userJourney@2x.png"
+          alt=""
+          class="flow-image flow-three"
+        />
+      </div>
 
-                    <section class="project-steps">
+      <!-- Final step -->
 
-                       <div class="project-step-icon">
-                           <img src="images/0_atm_project/01_cardsorting@2x.png" alt="atm-kiosk-testing-luhiriri-guillaume" width="100">
-                       </div>
+      <section class="project-steps">
+        <div class="project-step-desc">
+          <h3 class="explain-title-up">Final step</h3>
+          <h2 class="explain-title-bottom">prototyping</h2>
+          <p class="desc-paragraph">
+            After that, we opened BALSAMIQ and using the data we collected, came
+            up with a mid-fidelity prototype for the ATM kiosk software.
+            <br /><br />We chose “ The student commuter ” as our main subject
+            and designed the prototype according to her journey. Down here, you
+            find one of the task performed by the student ( buying a standard
+            ticket ).
+          </p>
+        </div>
+      </section>
 
-                       <div class="project-step-desc">
-                            <h3 class="explain-title-up">step 4</h3>
-                            <h2 class="explain-title-bottom">card sorting</h2>
-                            <p class="desc-paragraph">This was very helpful in a way that it helped us simplify the user-journeys.</p>
-                        </div>
+      <!-- Prototype images -->
 
-                    </section>
+      <div class="prototype_image">
+        <img
+          src="images/0_atm_project/0_atmproto_lgepage@2x.png"
+          alt="atm-prototype-luhiriri-guillaume"
+          class="proto-img"
+        />
+        <img
+          src="images/0_atm_project/0_atmproto_homepage@2x.png"
+          alt="atm-prototype-luhiriri-guillaume"
+          class="proto-img"
+        />
+        <img
+          src="images/0_atm_project/0_atmproto_ticket@2x.png"
+          alt="atm-prototype-ticket-luhiriri-guillaume"
+          class="proto-img"
+        />
+        <img
+          src="images/0_atm_project/0_atmproto_pmt@2x.png"
+          alt="atm-prototype-payment-luhiriri-guillaume"
+          class="proto-img"
+        />
+        <img
+          src="images/0_atm_project/0_atmproto_pmtcfrm@2x.png"
+          alt="atm-prototype-payment-luhiriri-guillaume"
+          class="proto-img"
+        />
+        <img
+          src="images/0_atm_project/0_atmproto_pmtcfrmfi@2x.png"
+          alt="atm-prototype-final-luhiriri-guillaume"
+          class="proto-img"
+        />
+      </div>
 
-                    <section class="project-steps">
+      <!-- Discover other projects -->
 
-                       <div class="project-step-desc">
-                            <h3 class="explain-title-up">step 5</h3>
-                            <h2 class="explain-title-bottom">personas & flowchart</h2>
-                            <p class="desc-paragraph">We defined 5 personas which are : tourist family, occasional user, weekender, employee commuter and student commuter. <br><br>Then depending on the different scenario for the ATM kiosk usage, we defined the decision making towards individual goals by the different personas. Hence the flowchart.</p>
-                        </div>
+      <div class="other-header">
+        <h4>now that you are here</h4>
+        <h3>discover other projects</h3>
+      </div>
 
-                    </section>
-                </div>
-                
-                <!-- Personnas & Flowchart images -->
-                
-                <div class="persona-flow">
-                    <img src="images/0_atm_project/01_userJourney_2@2x.png" alt="user-journey" class="flow-image">
-                    <img src="images/0_atm_project/01_userJourney_1@2x.png" alt="user-journey" class="flow-image flow-two">
-                    <img src="images/0_atm_project/01_userJourney@2x.png" alt="" class="flow-image flow-three">
-                </div>
-                
-                <!-- Final step -->
-                
-                <section class="project-steps">
-
-                       <div class="project-step-desc">
-                            <h3 class="explain-title-up">Final step</h3>
-                            <h2 class="explain-title-bottom">prototyping</h2>
-                            <p class="desc-paragraph">After that, we opened BALSAMIQ and using the data we collected, came up with a mid-fidelity prototype for the ATM kiosk software. <br><br>We chose “ The student commuter ” as our main subject and designed the prototype according to her journey. Down here, you find one of the task performed by the student ( buying a standard ticket ).</p>
-                        </div>
-
-                </section>
-                
-                <!-- Prototype images  -->
-                
-                <div class="prototype_image">
-                    <img src="images/0_atm_project/0_atmproto_lgepage@2x.png" alt="atm-prototype-luhiriri-guillaume" class="proto-img">
-                    <img src="images/0_atm_project/0_atmproto_homepage@2x.png" alt="atm-prototype-luhiriri-guillaume" class="proto-img">
-                    <img src="images/0_atm_project/0_atmproto_ticket@2x.png" alt="atm-prototype-ticket-luhiriri-guillaume" class="proto-img">
-                    <img src="images/0_atm_project/0_atmproto_pmt@2x.png" alt="atm-prototype-payment-luhiriri-guillaume" class="proto-img">
-                    <img src="images/0_atm_project/0_atmproto_pmtcfrm@2x.png" alt="atm-prototype-payment-luhiriri-guillaume" class="proto-img">
-                    <img src="images/0_atm_project/0_atmproto_pmtcfrmfi@2x.png" alt="atm-prototype-final-luhiriri-guillaume" class="proto-img">
-                </div>
-                
-                <!-- CTA -->
-                
-                <div class="cta-centered">
-                    <a href="#" class="cta">view prototype</a>
-                </div>
-                
-                <!-- Discover other projects -->
-                
-                <div class="other-header">
-                    <h4>now that you are here</h4>
-                    <h3>discover other projects</h3>
-                </div>
-        
-                <section class="other-projects">
-                    <a href="/atmapp.html">
-                        <img src="images/4_sunglasshut/05-atm-webapp-luhiriri-guillaume-2x.jpg" alt="atm-biglietti-metro" width="300">
-                        <h4>ATM webapp<br> <span class="ot-genre">UX . UI</span></h4>
-                    </a>
-                    <a href="/thetrumpet.html">
-                        <img src="images/4_sunglasshut/06-thetrumpet-luhiriri-guillaume-2x.jpg" alt="thetrumpet-luhiriri-guillaume" width="300">
-                        <h4>The trumpet<br> <span class="ot-genre">DIGITAL TYPOGRAPHY, BRANDING & UI</span></h4>
-                    </a>
-                    <a href="/maserati.html">
-                        <img src="images/0_atm_project/02-maserati-luhiriri-guillaume@2x.png" alt="thetrumpet-luhiriri-guillaume" width="300">
-                        <h4>Maserati<br> <span class="ot-genre">ART DIRECTION, UX & UI</span></h4>
-                    </a>
-                </section>
-                
+      <section class="other-projects">
+        <a href="/atmapp.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="images/4_sunglasshut/05-atm-webapp-luhiriri-guillaume-2x.jpg"
+              alt="atm-webapp-luhiriri-guillaume"
+            />
+          </div>
+          <div class="other-projects__desc">
+            <h4>ATM webapp</h4>
+            <h5 class="ot-genre">UX . UI</h5>
+          </div>
+        </a>
+        <a href="/thetrumpet.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="images/4_sunglasshut/06-thetrumpet-luhiriri-guillaume-2x.jpg"
+              alt="thetrumpet-luhiriri-guillaume"
+            />
+          </div>
+          <div class="other-projects__desc">
+            <h4>The Trumpet</h4> 
+            <h5 class="ot-genre">
+              TYPOGRAPHY, BRANDING & UI
+            </h5>
+          </div>
+        </a>
+        <a href="/maserati.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="/images/3_projects/04_maserati_ui_luhiriri_guillaume.jpg"
+              alt="maserati-luhiriri-guillaume"
+            />
+          </div>
+          <div class="other-projects__desc">
+            <h4>Maserati</h4> 
+            <h5 class="ot-genre">
+              ART DIRECTION, UX & UI
+            </h5>
+          </div>
+        </a>
+      </section>
     </main>
-    
-    
-        <!-- FOOTER -->
-    
-    <footer>
-		<p class="copyright">
-		    copyRight &copy; Luhiriri Mudekereza Guillaume | 2018
-		</p>
-	</footer>
-    
-</body>
 
+    <!-- FOOTER -->
+
+    <footer>
+        <p class="copyright">
+          Copyright &copy; Luhiriri Mudekereza Guillaume | 2018
+        </p>
+      </footer>
+  
+      <!-- Javascript -->
+      <script src="/main.js"></script>
+  </body>
 </html>

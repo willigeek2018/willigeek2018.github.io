@@ -462,6 +462,10 @@ figure img {
   margin-bottom: 25px;
 }
 
+figure figcaption {
+  margin-bottom: 25px;
+}
+
 .project-header {
   background-color: #3C4752;
   height: auto;
@@ -487,7 +491,6 @@ figure img {
 
 .main-subtitle-projx {
   color: #FAE6C4;
-  font-style: italic;
   font-weight: 100;
   letter-spacing: 1px;
   padding: 10px 0;
@@ -822,11 +825,16 @@ figcaption {
 }
 
 .other-projects__item {
+  border: 2px solid transparent;
   border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(300px, auto) minmax(50px, auto);
   text-decoration: none;
+}
+
+.other-projects__item:hover {
+  border: 2px solid var(--primary-color);
 }
 
 .other-projects__img {
