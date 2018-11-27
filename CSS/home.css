@@ -17,10 +17,9 @@ body {
 /* ----  HEADER & NAVIGATION  ---- */
 
 .header {
-  border: 2px solid red;
   position: relative;
   width: 100%;
-  padding: 25px;
+  padding: 15px;
   background-color: #343d46;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,7 +85,7 @@ body {
   margin: 0px;
   color: #F2C22F;
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 .header-me--desc-detail h3{
   margin: 15px 0px;
@@ -95,14 +94,14 @@ body {
   font-weight: 400;
   letter-spacing: 3px;
   font-size: .8em;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 .header-me--desc-detail p{
   margin: 0px;
   color: ghostwhite;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   font-weight: 100;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 .header-me--desc-cta {
@@ -151,22 +150,18 @@ body {
 @media (max-width: 900px){
   .header-me--desc{
     width: 85vw;
-    height: 75vh;
+    height: 80vh;
     z-index: 5;
-  }
-  .header-me--desc-detail {
   }
 }
 
-@media (max-width: 600px) {
-  .header-me--desc-detail h2 {
-    font-size: 1em;
-    line-height: 1.2em;
-    letter-spacing: 1px;
+@media (max-width: 650px) {
+  .header-me--desc-detail{
+    margin: 15px 0px;
   }
+
   .header-me--desc-detail h3 {
-    font-size: .6em;
-    line-height: 1.5em;
+    margin: 8px 0px;
   }
 }
 
@@ -183,7 +178,6 @@ body {
 
 .header--logo{
   flex-basis: 33.33%;
-  border: 2px solid red;
   display: inline-block;
   text-align: center;
   margin: 0px;
@@ -195,7 +189,8 @@ body {
 }
 
 .header--nav {
-  border: 2px solid yellow;
+  display: flex;
+  justify-content: flex-end;
 }
 .menu{
   width: 100%;
@@ -209,7 +204,6 @@ body {
 }
 .menu--item {
   margin-left: 25px;
-  border: 2px solid greenyellow;
   text-align: center;
 }
 .menu--item > a {
@@ -227,7 +221,45 @@ body {
   color: #F2C232;
 }
 
-@media ()
+@media (max-width:650px){
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .barOne {
+    width: 35px;
+    height: 2px;
+    background-color: ghostwhite;
+
+    transition: all .1s ease-in-out;
+  }
+
+  .barTwo {
+    width: 35px;
+    height: 2px;
+    background-color: ghostwhite;
+    margin-top: 10px;
+
+    transition: all .1s ease-in-out;
+  }
+
+  .crossHamburger .barOne {
+    transform: rotate(45deg) translate(5px,4px);
+  }
+
+  .crossHamburger .barTwo {
+    transform: rotate(-45deg) translate(4px,-4px);
+  }
+}
 
 /* MEDIA QUERY */
 
