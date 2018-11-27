@@ -8,29 +8,64 @@
     />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Projects | Luhiriri Guillaume</title>
-    <link rel="stylesheet" href="/CSS/project.css" />
+    <link rel="stylesheet" href="/CSS/home.css">
   </head>
   <body>
     <!-- HEADER -->
 
-    <header class="main-nav">
-      <label for="toggle" class="icon-white">&#9776;</label>
-      <input type="checkbox" id="toggle" />
-
-      <nav class="menu">
-        <a href="index.html" id="home_page">myWorld</a>
-        <a href="aboutme.html" id="about_me_page">aboutMe</a>
-        <a href="project.html" id="project_page">projX</a>
-        <a href="pokeme.html">pokeMe</a>
-      </nav>
-    </header>
+    <header class="header">
+        <div class="header-me">
+          <div class="header-me--desc" id="myDetails">
+            <div class="header-me--desc-img">
+              <img src="/images/profilepic.JPG" alt="" />
+            </div>
+            <article class="header-me--desc-detail">
+              <h2>Luhiriri Mudekereza Guillaume</h2>
+              <h3>Congolese | Designer | Developer | Creator</h3>
+              <p>
+                I strive to find creative solutions for businesses through
+                strategic concept, clean code and elegant design.
+              </p>
+            </article>
+            <div class="header-me--desc-cta">
+              <a href="tel:+393472154128" class="desc-cta">Call</a>
+              <a href="mailto:guillaumeluhiriri@gmail.com" class="desc-cta">Send email</a>
+            </div>
+          </div>
+    
+          <div class="header-me--thumbnail" id="thumbnail">
+            <img src="/images/profilepic.JPG" alt="luhiriri-mudekereza-guillaume" id="thumbnailImg" />
+          </div>
+        </div>
+    
+        <h1 class="header--logo"><a href="/index.html">LMG</a></h1>
+    
+        <nav class="header--nav">
+          <ul class="menu">
+            <li class="menu--item"><a href="/project.html">projects</a></li>
+            <li class="menu--item"><a href="/experiment.html">experiments</a></li>
+          </ul>
+          <div class="hamburger-menu" id="hamburger">
+            <div class="barOne"></div>
+            <div class="barTwo"></div>
+          </div>
+        </nav>
+      </header>
+    
+      <ul class="mobile-menu" id="mobileMenu">
+        <li class="mobile-menu__item"><a href="/project.html">projects</a></li>
+        <li class="mobile-menu__item"><a href="/experiment.html">experiments</a></li>
+      </ul>
 
     <!-- MAIN CONTENT -->
 
-    <main class="wrapper">
+    <main class="main-wrapper">
       <div class="headline">
         <h1 class="page_title">projects</h1>
-        <h2>Projects I worked on during <br /> my master and for clients.</h2>
+        <h2>
+          Projects I worked on during <br />
+          my master and for clients.
+        </h2>
       </div>
 
       <section class="projects">
@@ -150,12 +185,15 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
 
-    <footer>
+  <footer>
       <p class="copyright">
-        copyRight &copy; Luhiriri Mudekereza Guillaume | 2018
+        Copyright &copy; Luhiriri Mudekereza Guillaume | 2018
       </p>
     </footer>
+  
+    <!-- Javascript -->
+    <script src="/main.js"></script>
   </body>
 </html>

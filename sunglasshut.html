@@ -1,153 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Browse through my projects : ATM kiosk, ATM web application, the trumpet UI, Maserati digital art direction and more... ">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Browse through my projects : ATM kiosk, ATM web application, the trumpet UI, Maserati digital art direction and more... "
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Sunglasshut | Luhiriri Guillaume</title>
-    <link rel="stylesheet" href="/CSS/atmapp.csss">
-    <link rel="stylesheet" href="/CSS/style.css">
-</head>
-<body>
-       
-        <!-- HEADER -->
-        
-    <header class="main-nav">
-        <label for="toggle" class="icon-white">&#9776;</label>
-        <input type="checkbox" id="toggle">
+    <link rel="stylesheet" href="/CSS/atmapp.csss" />
+    <link rel="stylesheet" href="/CSS/home.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
 
-        <nav class="menu">
-            <a href="index.html" id="home_page">myWorld</a>
-            <a href="aboutme.html" id="about_me_page">aboutMe</a>
-            <a href="project.html" id="project_page">projX</a>
-            <a href="pokeme.html">pokeMe</a>
-        </nav>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-me">
+        <div class="header-me--desc" id="myDetails">
+          <div class="header-me--desc-img">
+            <img src="/images/profilepic.JPG" alt="" />
+          </div>
+          <article class="header-me--desc-detail">
+            <h2>Luhiriri Mudekereza Guillaume</h2>
+            <h3>Congolese | Designer | Developer | Creator</h3>
+            <p>
+              I strive to find creative solutions for businesses through
+              strategic concept, clean code and elegant design.
+            </p>
+          </article>
+          <div class="header-me--desc-cta">
+            <a href="tel:+393472154128" class="desc-cta">Call</a>
+            <a href="mailto:guillaumeluhiriri@gmail.com" class="desc-cta"
+              >Send email</a
+            >
+          </div>
+        </div>
+
+        <div class="header-me--thumbnail" id="thumbnail">
+          <img
+            src="/images/profilepic.JPG"
+            alt="luhiriri-mudekereza-guillaume"
+            id="thumbnailImg"
+          />
+        </div>
+      </div>
+
+      <h1 class="header--logo"><a href="/index.html">LMG</a></h1>
+
+      <nav class="header--nav">
+        <ul class="menu">
+          <li class="menu--item"><a href="/project.html">projects</a></li>
+          <li class="menu--item"><a href="/experiment.html">experiments</a></li>
+        </ul>
+        <div class="hamburger-menu" id="hamburger">
+          <div class="barOne"></div>
+          <div class="barTwo"></div>
+        </div>
+      </nav>
     </header>
-    
-        <!-- MAIN CONTENT -->
-        
-    <main class="wrapper">
-       
-        <section class="project-header">
-           
-            <div class="project-title">
-               <div class="title-item">
-                    <h2 class="main-title-projx">Sunglasshut</h2>
-                    <h3 class="main-subtitle-projx">DIGITAL STRATEGY  .  UX  .  UI</h3>
-                </div>
-                <img src="images/4_sunglasshut/03_spd-logo-luhiriri-guillaume.png" alt="">
-            </div>
-            
-            <div class="project-desc">
-               
-                <article class="project-desc-desc">
-                    <h4 class="desc-header">description</h4>
-                    <p class="desc-paragraph">Provide curated content, contextualizing the different products the website sells, instead of simply listing them over a white limbo. The Product Discovery phase should privilege this kind of interaction.</p>
-                </article>
-                
-                <article class="project-desc-result">
-                    <h4 class="desc-header">result</h4>
-                    <p class="desc-paragraph">The goal of this project is to redesign <a href="www.sunglasshut.com ">sunglasshut's website </a>to reposition the brand. 
-                    So, a high fidelity prototype that translate the goal.</p>
-                </article>
-                
-            </div>
-            
-            <div class="project-details">
-                <article>
-                    <h4 class="desc-header">roles</h4>
-                    <ul class="desc-paragraph">
-                        <li>strategist</li>
-                        <li>user experience</li>
-                        <li>user interface</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">instructors</h4>
-                    <ul class="desc-paragraph">
-                        <li>Marco Cattani</li>
-                        <li>Stephano</li>
-                        <li>Daniella Zlatar</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">team</h4>
-                    <ul class="desc-paragraph">
-                        <li>Marian St Laurent</li>
-                        <li>Silvia Bochero</li>
-                        <li>Buth Vathanagul</li>
-                    </ul>
-                </article>
-                <article>
-                    <h4 class="desc-header">duration</h4>
-                    <ul class="desc-paragraph">
-                        <li>may - june 2018</li>
-                    </ul>
-                </article>
-            </div>
-            
-        </section>
-        
-        <figure><img src="images/4_sunglasshut/00-sgh-banner-luhiriri-guillaume.png" alt="sgh-banner-luhiriri-guillaume"></figure>
-        
-        <section class="project-explanation">
-            <div class="project-ex-desc">
-                <h3 class="explain-title-up">Sunglasshut</h3>
-                <h2 class="explain-title-bottom">going premium</h2>
-                <p class="desc-paragraph">Sunglasshut’s new position is to  become the authority of the premium sunglasses category, promoting the most fashionable brands such as Prada, Dolce & Gabbana, Versace, Bulgari… </p>
-            </div>
-        </section>
-                    
-        <figure>
-            <img src="images/4_sunglasshut/01-sgh-homepage-luhiriri-guillaume.jpg" alt="sgh-homepage-luhiriri-guillaume">
-        </figure>
-        
-        <section class="project-explanation to-the-right">
-            <div class="project-ex-desc">
-                <h3 class="explain-title-up">the reasonning behind</h3>
-                <h2 class="explain-title-bottom">how we did it</h2>
-                <p class="desc-paragraph">Being the curator of the best brands, and being the incubator of unique product stories. <br><br> One of the key ingredient to reach this goal is to provide curated content, contextualizing the different products the website sells, instead of simply listing them over a white limbo. <br> <br>
-                Also by raising the premium perseption of the brand through  seamless  navigation through the site and high quality visuals.</p>
-            </div>
 
-        </section>
-        
-        <figure>
-            <img src="images/4_sunglasshut/02-sgh-brandpage-luhiriri-guillaume.jpg" alt="sgh-homepage-luhiriri-guillaume">
-        </figure>
-        
-        <div class="cta-centered">
-            <a href="https://adobe.ly/2uDzfrj" class="cta">view prototype</a>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li class="mobile-menu__item"><a href="/project.html">projects</a></li>
+      <li class="mobile-menu__item">
+        <a href="/experiment.html">experiments</a>
+      </li>
+    </ul>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-wrapper">
+      <section class="project-header">
+        <div class="project-title">
+          <div class="title-item">
+            <h2 class="main-title-projx">Sunglasshut</h2>
+            <h3 class="main-subtitle-projx">DIGITAL STRATEGY . UX . UI</h3>
+          </div>
+          <img
+            src="images/4_sunglasshut/03_spd-logo-luhiriri-guillaume.png"
+            alt=""
+          />
         </div>
-        
-        
-        <div class="other-header">
-                <h4>now that you are here</h4>
-                <h3>discover other projects</h3>
+
+        <div class="project-desc">
+          <article class="project-desc-desc">
+            <h4 class="desc-header">description</h4>
+            <p class="desc-paragraph">
+              Provide curated content, contextualizing the different products
+              the website sells, instead of simply listing them over a white
+              limbo. The Product Discovery phase should privilege this kind of
+              interaction.
+            </p>
+          </article>
+
+          <article class="project-desc-result">
+            <h4 class="desc-header">result</h4>
+            <p class="desc-paragraph">
+              The goal of this project is to redesign
+              <a href="www.sunglasshut.com ">sunglasshut's website </a>to
+              reposition the brand. So, a high fidelity prototype that translate
+              the goal.
+            </p>
+          </article>
         </div>
-        
-        <section class="other-projects">
-            <a href="/atm.html">
-                <img src="images/4_sunglasshut/04-atm-biglietti-metro@2x.jpg" alt="atm-biglietti-metro" width="300">
-                <h4>ATM kiosk <br> <span class="ot-genre">UX . UI</span></h4>
-            </a>
-            <a href="/atmapp.html">
-                <img src="images/4_sunglasshut/05-atm-webapp-luhiriri-guillaume-2x.jpg" alt="atm-webapp-luhiriri-guillaume" width="300">
-                <h4>ATM webapp <br> <span class="ot-genre">UX . UI</span></h4>
-            </a>
-            <a href="/thetrumpet.html">
-                <img src="images/4_sunglasshut/06-thetrumpet-luhiriri-guillaume-2x.jpg" alt="thetrumpet-luhiriri-guillaume" width="300">
-                <h4>The Trumpet <br> <span class="ot-genre">DIGITAL TYPOGRAPHY, BRANDING & UI</span></h4>
-            </a>
-        </section>
+
+        <div class="project-details">
+          <article>
+            <h4 class="desc-header">roles</h4>
+            <ul class="desc-paragraph">
+              <li>strategist</li>
+              <li>user experience</li>
+              <li>user interface</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">instructors</h4>
+            <ul class="desc-paragraph">
+              <li>Marco Cattani</li>
+              <li>Stephano</li>
+              <li>Daniella Zlatar</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">team</h4>
+            <ul class="desc-paragraph">
+              <li>Marian St Laurent</li>
+              <li>Silvia Bochero</li>
+              <li>Buth Vathanagul</li>
+            </ul>
+          </article>
+          <article>
+            <h4 class="desc-header">duration</h4>
+            <ul class="desc-paragraph">
+              <li>may - june 2018</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <figure>
+        <img
+          src="images/4_sunglasshut/00-sgh-banner-luhiriri-guillaume.png"
+          alt="sgh-banner-luhiriri-guillaume"
+        />
+      </figure>
+
+      <section class="project-explanation">
+        <div class="project-ex-desc">
+          <h3 class="explain-title-up">Sunglasshut</h3>
+          <h2 class="explain-title-bottom">going premium</h2>
+          <p class="desc-paragraph">
+            Sunglasshut’s new position is to become the authority of the premium
+            sunglasses category, promoting the most fashionable brands such as
+            Prada, Dolce & Gabbana, Versace, Bulgari…
+          </p>
+        </div>
+      </section>
+
+      <figure>
+        <img
+          src="images/4_sunglasshut/01-sgh-homepage-luhiriri-guillaume.jpg"
+          alt="sgh-homepage-luhiriri-guillaume"
+        />
+      </figure>
+
+      <section class="project-explanation to-the-right">
+        <div class="project-ex-desc">
+          <h3 class="explain-title-up">the reasonning behind</h3>
+          <h2 class="explain-title-bottom">how we did it</h2>
+          <p class="desc-paragraph">
+            Being the curator of the best brands, and being the incubator of
+            unique product stories. <br /><br />
+            One of the key ingredient to reach this goal is to provide curated
+            content, contextualizing the different products the website sells,
+            instead of simply listing them over a white limbo. <br />
+            <br />
+            Also by raising the premium perseption of the brand through seamless
+            navigation through the site and high quality visuals.
+          </p>
+        </div>
+      </section>
+
+      <figure>
+        <img
+          src="images/4_sunglasshut/02-sgh-brandpage-luhiriri-guillaume.jpg"
+          alt="sgh-homepage-luhiriri-guillaume"
+        />
+      </figure>
+
+      <div class="cta-centered">
+        <a href="https://adobe.ly/2uDzfrj" class="cta">view prototype</a>
+      </div>
+
+      <div class="other-header">
+        <h4>now that you are here</h4>
+        <h3>discover other projects</h3>
+      </div>
+
+      <section class="other-projects">
+        <a href="/atm.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="images/4_sunglasshut/04-atm-biglietti-metro@2x.jpg"
+              alt="atm-biglietti-metro"
+            />
+          </div>
+          <div class="other-projects__desc">
+              <h4>ATM kios</h4> 
+              <h5 class="ot-genre">
+                UX . UI
+              </h5>
+          </div>
+        </a>
+        <a href="/atmapp.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="images/4_sunglasshut/05-atm-webapp-luhiriri-guillaume-2x.jpg"
+              alt="atm-webapp-luhiriri-guillaume"
+            />
+          </div>
+          <div class="other-projects__desc">
+              <h4>ATM webapp</h4> 
+              <h5 class="ot-genre">
+                UX . UI
+              </h5>
+          </div>
+        </a>
+        <a href="/thetrumpet.html" class="other-projects__item">
+          <div class="other-projects__img">
+            <img
+              src="images/4_sunglasshut/06-thetrumpet-luhiriri-guillaume-2x.jpg"
+              alt="thetrumpet-luhiriri-guillaume"
+            />
+          </div>
+          <div class="other-projects__desc">
+            <h4>The Trumpet</h4> 
+            <h5 class="ot-genre">
+              TYPOGRAPHY, BRANDING & UI
+            </h5>
+          </div>
+        </a>
+      </section>
     </main>
-        
+
     <!-- FOOTER -->
-    
+
     <footer>
-		<p class="copyright">
-		    copyRight &copy; Luhiriri Mudekereza Guillaume | 2018
-		</p>
-	</footer>
-</body>
+      <p class="copyright">
+        Copyright &copy; Luhiriri Mudekereza Guillaume | 2018
+      </p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="/main.js"></script>
+  </body>
 </html>
