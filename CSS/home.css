@@ -893,7 +893,7 @@ figcaption {
     justify-content: flex-start;
   }
   .project-title img {
-    padding: 25px 0px;
+    padding-top: 25px;
   }
   .project-desc {
     flex-flow: column nowrap;
