@@ -25,3 +25,4 @@ function openMenu(){
   mobMenu.classList.toggle('openedMobileMenu');
 }
 
+// HOMEPAGE ANIMATION
