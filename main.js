@@ -24,5 +24,3 @@ function openMenu(){
   hamburger.classList.toggle('crossHamburger');
   mobMenu.classList.toggle('openedMobileMenu');
 }
-
-// HOMEPAGE ANIMATION

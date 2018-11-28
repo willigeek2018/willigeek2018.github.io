@@ -19,6 +19,7 @@ body {
 /* Main Wrapper Site Starts */
 
 .main-wrapper {
+  border: 2px solid red;
   margin: 105px auto 0 auto;
   width: 80vw;
   transition: all .1s ease-in-out;
@@ -428,6 +429,12 @@ body {
   padding-bottom: 25px;
 }
 
+.titleH2 {
+  color: #F2C232;
+  font-size: 2em;
+  padding-bottom: 25px;
+}
+
 .projects-card__details h3 {
   padding-bottom: 25px;
   color: #FAE6C4;
@@ -435,7 +442,23 @@ body {
   letter-spacing: 3px;
 }
 
+.titleH3{
+  padding-bottom: 25px;
+  color: #FAE6C4;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .projects-card__details p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: ghostwhite;
+  font-weight: 300;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.paragraph {
   font-family: 'IBM Plex Sans', sans-serif;
   color: ghostwhite;
   font-weight: 300;
@@ -999,4 +1022,41 @@ figcaption {
   .branding-image img {
     width: 100%;
   }
+}
+
+/* Experiment Page */
+
+.experiment-grid {
+  border: 2px solid green;
+  margin: 50px 0px;
+}
+
+.experiment-grid__item {
+  border: 2px solid yellow;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 25px;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+
+.experiment-grid__img {
+  width: 100%;
+  height: 100%;
+}
+
+.experiment-grid__img img {
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experiment-grid__desc {
+  border: 2px solid red;
+  padding: 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
