@@ -19,7 +19,6 @@ body {
 /* Main Wrapper Site Starts */
 
 .main-wrapper {
-  border: 2px solid red;
   margin: 105px auto 0 auto;
   width: 80vw;
   transition: all .1s ease-in-out;
@@ -1027,12 +1026,10 @@ figcaption {
 /* Experiment Page */
 
 .experiment-grid {
-  border: 2px solid green;
   margin: 50px 0px;
 }
 
 .experiment-grid__item {
-  border: 2px solid yellow;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: 1fr;
@@ -1054,9 +1051,15 @@ figcaption {
 }
 
 .experiment-grid__desc {
-  border: 2px solid red;
   padding: 25px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+}
+
+@media(max-width: 950px){
+  .experiment-grid__item{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+  }
 }
